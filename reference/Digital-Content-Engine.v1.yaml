@@ -2,50 +2,99 @@ swagger: '2.0'
 info:
   version: '1.0'
   title: Digital Content Engine API Documentation
-  description: "<h3>Welcome to the Digital Content Engine (DCE)!</h3>\n\nThe DCE is a Jahia content repository and RESTful API that delivers property and property-related information to a variety of consuming applications. As well, the DCE delivers content managed \"structured\" data \n\nCalls are facilitated using [Mashery API Services](https://www.mashery.com/).  All endpoints are only accessible over https and are located at https://api.vistana.com (https://api-qa.vistana.com for nonprod).\n\nMashery is used for endpoint authentication as well as rate limiting (by both queries per second and queries per day).\n\n## Base URLs\n\n##### Production:\n```\nhttps://api.vistana.com/dcm/{version}/{authtype}/{endpoint}\n```\n\n##### EXAMPLE\n```\nhttps://api.vistana.com/dcm/v1/oauth/properties\n```\n\n##### QA:\n```\nhttps://api-qa.vistana.com/coh/{version}/{authtype}/{endpoint}\n```\n\n##### EXAMPLE\n```\nhttps://api-qa.vistana.com/dcm/v1/oauth/properties\n```\n\n## Limits\nBy default api keys are limited to 10 queries per second with a maximum of 25000 requests per day.\n\n## Mashery\nFor more information on specific service details related to login, registration, and account updates. Please refer to the Vistana Mobile API Documentation. There you will find specific details on how to register your device and retrieve an OAuth token.\n\n### Mashery Responses\nSuccessful authentication to Mashery results in request being forwarded to configured endpoint.  Responses correspond to structures defined below.\n\nFailure to authenticate or exceeding rate limits result in the following:\n* 403 Invalid permissions to endpoint, bad `api_key` or `masheryAccessToken`:\n```\nHttpStatus: 403 Forbidden\nPOST https://api-qa.vistana.com/v1/oauth/testendpoint?api_key=[badapikey] HTTP/1.1\nHeaders:\n  X-Mashery-Error-Code: ERR_403_DEVELOPER_INACTIVE\n  Content-Type: text/xml\n  X-Mashery-Responder: prod-j-worker-us-east-1b-121.mashery.com\nBody: <h1>Developer Inactive</h1>\n```\n* 403 Developer Over Queries Per Second:\n```\nHttpStatus: 403 Forbidden\nPOST https://api-qa.vistana.com/v1/oauth/testendpoint?api_key=[apikey] HTTP/1.1\nHeaders:\n  X-Mashery-Error-Code: ERR_403_DEVELOPER_OVER_QPS\n  Content-Type: text/xml\n  X-Mashery-Responder: prod-j-worker-us-east-1b-121.mashery.com\nBody: <h1>Developer Over Qps</h1>\n```\n* 596 Service Not Found:\n```\nHttpStatus: 596\nPOST https://api-qa.vistana.com/v1/oauth/fakeendpoint?api_key=[apikey] HTTP/1.1\nHeaders:\n  X-Mashery-Error-Code: ERR_596_SERVICE_NOT_FOUND\n  Content-Type: text/xml\n  X-Mashery-Responder: prod-j-worker-us-east-1b-121.mashery.com\nBody: <h1>596 Service Not Found</h1>\n```\n* 504 Gateway Timeout (Request from endpoint timed out):\n```\nHttpStatus: 504\nPOST https://api-qa.vistana.com/v1/oauth/endpoint HTTP/1.1\nHeaders:\n  X-Mashery-Error-Code: ERR_504_GATEWAY_TIMEOUT\n  Content-Type: text/xml\n  X-Mashery-Responder: prod-j-worker-us-east-1b-121.mashery.com\nBody: <h1>504 Gateway Timeout</h1>\n```\n"
+  description: |
+    <h3>Welcome to the Digital Content Engine (DCE)!</h3>
+
+    The DCE is a Jahia content repository and RESTful API that delivers property and property-related information to a variety of consuming applications. As well, the DCE delivers content managed "structured" data.
+
+    Calls are processed through Mashery. All endpoints are HTTPS only and are located at `https://api-qa.vistana.com` or `https://api.vistana.com`. All endpoint are subject to rate limiting rate limiting (by both queries per second and queries per day).
+
+    ## Base URLs
+
+    ##### Production:
+    ```
+    https://api.vistana.com/dcm/v1/oauth/properties
+    ```
+
+    ##### Staging:
+    ```
+    https://api-qa.vistana.com/dcm/v1/oauth/properties
+    ```
+
+    ##### QA:
+    ```
+    https://api-qa.vistana.com/dcm/v1/oauth/properties
+    ```
+
+    ##### QA2:
+    ```
+    https://api-qa.vistana.com/dcm/v1/oauth/properties
+    ```
+
+    ## Mashery
+    For more information on specific service details related to login, registration, and account updates. Please refer to the Vistana Mobile API Documentation. There you will find specific details on how to register your device and retrieve an OAuth token.
+
+    ### Mashery Responses
+    Successful authentication to Mashery results in request being forwarded to configured endpoint.  Responses correspond to structures defined below.
+
+    ---
+
+    **403 Invalid permissions to endpoint, bad `api_key` or `masheryAccessToken`:**
+    ```
+    HttpStatus: 403 Forbidden
+    POST https://api-qa.vistana.com/v1/oauth/testendpoint?api_key=[badapikey] HTTP/1.1
+    Headers:
+      X-Mashery-Error-Code: ERR_403_DEVELOPER_INACTIVE
+      Content-Type: text/xml
+      X-Mashery-Responder: prod-j-worker-us-east-1b-121.mashery.com
+    Body: Developer Inactive
+    ```
+
+    **403 Developer Over Queries Per Second:**
+    ```
+    HttpStatus: 403 Forbidden
+    POST https://api-qa.vistana.com/v1/oauth/testendpoint?api_key=[apikey] HTTP/1.1
+    Headers:
+      X-Mashery-Error-Code: ERR_403_DEVELOPER_OVER_QPS
+      Content-Type: text/xml
+      X-Mashery-Responder: prod-j-worker-us-east-1b-121.mashery.com
+    Body: Developer Over Qps
+    ```
+
+    **596 Service Not Found:**
+    ```
+    HttpStatus: 596
+    POST https://api-qa.vistana.com/v1/oauth/fakeendpoint?api_key=[apikey] HTTP/1.1
+    Headers:
+      X-Mashery-Error-Code: ERR_596_SERVICE_NOT_FOUND
+      Content-Type: text/xml
+      X-Mashery-Responder: prod-j-worker-us-east-1b-121.mashery.com
+    Body: 596 Service Not Found
+    ```
+
+    **504 Gateway Timeout (Request from endpoint timed out):**
+    ```
+    HttpStatus: 504
+    POST https://api-qa.vistana.com/v1/oauth/endpoint HTTP/1.1
+    Headers:
+      X-Mashery-Error-Code: ERR_504_GATEWAY_TIMEOUT
+      Content-Type: text/xml
+      X-Mashery-Responder: prod-j-worker-us-east-1b-121.mashery.com
+    Body: 504 Gateway Timeout
+    ```
   contact:
     name: Michael Waskiewicz
     email: michael.waskiewicz@vistana.com
 host: api.vistana.com
-basePath: /dcm/v1/oauth
+basePath: /dcm/v3/oauth
 schemes:
   - https
 securityDefinitions:
-  ApiKeyAuth:
+  api_key:
     type: apiKey
     name: api_key
     in: header
-  OAuth2:
-    type: oauth2
-    flow: implicit
-    authorizationUrl: 'https://api.vistana.com/v1/oauth/device'
-    scopes:
-      read: Grants read access
-    description: |-
-      ### OAuth Endpoints
-      Requests follow OAuth 2.0 [implicit grant flow](http://oauthlib.readthedocs.io/en/latest/oauth2/grants/implicit.html). Tokens are generated via successful authentication through the login service.
-
-      To access lower level services (labeled oauth-idp-lower or digital content manager) your device must be registered. You can register your device using the device registration service `/v1/oauth/device`. The user context associated to a device level mashery access token is the device id populated on device registration.
-
-      A user level mashery access token is required to access anything OAuth-IDP (see `/v1/oauth/login`) in the Mobile API Documentation. The user context associated to a user level mashery access token is a string formatted as such: {user/guestprefix}:{userid}:{deviceid}:{mobileexternalid(if exists)}:{mobilevendorid(if exists)}. Use a user-level mashery access token for anything related to a particular log in.
-
-      Mashery persists a user context (generated by idp) as part of a successful login. This user context is directly associated to the generated OAuth Access Token. Upon successfully validating a mashery access token, Mashery will inject the associated user context into the request for the endpoint to parse. This allows the endpoint to identify users by access tokens.
-
-      Some services modify data potentially part of the user context. It's the service's responsibility to also update the user context.
-
-      ```
-      POST https://api-qa.vistana.com/v1/oauth/login
-      Headers:
-        Authorization: Bearer [DEVICE_MASHERY_ACCESS_TOKEN]
-      ```
-
-      ### Register Device
-      Endpoints expect `api_key` in header.
-      ```
-      POST https://api-qa.vistana.com/v1/oauth/device
-      Headers:
-        api_key: [API_KEY_HERE]
-      ```
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sodales lobortis quam ac iaculis. Aliquam iaculis semper commodo. Morbi non urna id dui convallis aliquet vitae vitae ipsum. Quisque ut est mollis, facilisis libero finibus, lacinia felis. Nullam fringilla, ante sit amet sollicitudin porttitor, nisl libero tempor odio, nec dapibus lorem nisi blandit dolor. Integer condimentum ligula metus, a sodales ipsum blandit sit amet. In sollicitudin sapien eu orci varius, et cursus eros vehicula. Nullam congue, urna quis consequat ultrices, velit sem facilisis dui, et porta ex velit a arcu. Proin neque felis, cursus vitae dictum non, commodo sed erat. Sed convallis orci at ornare dignissim. Curabitur gravida euismod sodales. Pellentesque id lacinia massa.'
 security:
   - OAuth2: []
 paths:
@@ -2706,9 +2755,6 @@ paths:
           name: list
           type: string
           description: 'Use **?list={fieldName}** when you would like the response to return only the values of a certain field. This is useful when you would like to get a list of, say, article titles for a blog. This featured only works with non-object data.'
-        - type: string
-          in: header
-          name: api_key
       tags:
         - Ads
       responses:
@@ -2802,6 +2848,8 @@ paths:
               default: 'no-cache, no-store, must-revalidate'
       produces:
         - application/json
+      security:
+        - api_key: []
   '/ads/{brand}/{placementid}/{mode}/{pillar}/{resortid}/{usertype}':
     get:
       summary: Ads — Single Detail
@@ -2856,9 +2904,6 @@ paths:
           name: list
           type: string
           description: 'Use **?list={fieldName}** when you would like the response to return only the values of a certain field. This is useful when you would like to get a list of, say, article titles for a blog. This featured only works with non-object data.'
-        - type: string
-          in: header
-          name: api_key
       tags:
         - Ads
       responses:
@@ -3193,20 +3238,6 @@ paths:
         - application/json
       tags:
         - Properties
-  /rooms:
-    get:
-      summary: Rooms
-      responses: {}
-      operationId: get-rooms
-      tags:
-        - Rooms
-  /content:
-    get:
-      summary: Content
-      tags:
-        - Content
-      responses: {}
-      operationId: get-content
   /refs:
     get:
       summary: Refs
@@ -3214,6 +3245,20 @@ paths:
         - Refs
       responses: {}
       operationId: get-refs
+  /content:
+    get:
+      summary: Content
+      tags:
+        - Content
+      responses: {}
+      operationId: get-content
+  /rooms:
+    get:
+      summary: Rooms
+      responses: {}
+      operationId: get-rooms
+      tags:
+        - Rooms
 definitions:
   ugctags:
     type: array
