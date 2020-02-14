@@ -11,27 +11,37 @@ info:
 
     ## Base URLs
 
-    ##### Production:
+    #### Production:
     ```
-    https://api.vistana.com/dcm/v1/oauth/properties
-    ```
-
-    ##### Staging:
-    ```
-    https://api-qa.vistana.com/dcm/v1/oauth/properties
+    BASE_URL: https://api.vistana.com/dcm/v3
+    BASE_URL_STAGED: https://api.vistana.com/dcm/v3/staged
+    API_KEY: gvvw42j9kjnke8dxuqs9tbke
     ```
 
-    ##### QA:
+    #### QA:
     ```
-    https://api-qa.vistana.com/dcm/v1/oauth/properties
-    ```
-
-    ##### QA2:
-    ```
-    https://api-qa.vistana.com/dcm/v1/oauth/properties
+    BASE_URL: https://api-qa.vistana.com/dcm/v3
+    BASE_URL_STAGED: https://api-qa.vistana.com/dcm/v3/staged
+    API_KEY: y368m7ube7wmpk6c4a8ntd6d
     ```
 
-    ## Mashery
+    #### QA2:
+    ```
+    BASE_URL: https://api-qa.vistana.com/dcm/qa2/v3
+    BASE_URL_STAGED: https://api-qa.vistana.com/dcm/qa2/v3/staged
+    API_KEY: y368m7ube7wmpk6c4a8ntd6d
+    ```
+
+    #### Staging:
+    ```
+    BASE_URL: https://api-qa.vistana.com/dcm/v3/staged
+    BASE_URL_STAGED: https://api-qa.vistana.com/dcm/stg/v3/staged
+    API_KEY: y368m7ube7wmpk6c4a8ntd6d
+    ```
+
+    ## Authentication
+
+    ### Mashery
     For more information on specific service details related to login, registration, and account updates. Please refer to the Vistana Mobile API Documentation. There you will find specific details on how to register your device and retrieve an OAuth token.
 
     ### Mashery Responses
@@ -92,7 +102,7 @@ schemes:
 securityDefinitions:
   api_key:
     type: apiKey
-    name: api_key
+    name: '{api_key}'
     in: header
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sodales lobortis quam ac iaculis. Aliquam iaculis semper commodo. Morbi non urna id dui convallis aliquet vitae vitae ipsum. Quisque ut est mollis, facilisis libero finibus, lacinia felis. Nullam fringilla, ante sit amet sollicitudin porttitor, nisl libero tempor odio, nec dapibus lorem nisi blandit dolor. Integer condimentum ligula metus, a sodales ipsum blandit sit amet. In sollicitudin sapien eu orci varius, et cursus eros vehicula. Nullam congue, urna quis consequat ultrices, velit sem facilisis dui, et porta ex velit a arcu. Proin neque felis, cursus vitae dictum non, commodo sed erat. Sed convallis orci at ornare dignissim. Curabitur gravida euismod sodales. Pellentesque id lacinia massa.'
 security:
