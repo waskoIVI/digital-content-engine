@@ -7,37 +7,34 @@ info:
 
     The DCE is a Jahia content repository and RESTful API that delivers property and property-related information to a variety of consuming applications. As well, the DCE delivers content managed "structured" data.
 
-    Calls are processed through Mashery. All endpoints are HTTPS only and are located at `https://api-qa.vistana.com` or `https://api.vistana.com`. All endpoint are subject to rate limiting rate limiting (by both queries per second and queries per day).
+    Calls are processed through Mashery. All endpoints are HTTPS only and are subject to rate limiting rate limiting (by both queries per second and queries per day).
 
     ## Base URLs
 
     #### Production:
-    ```
-    BASE_URL: https://api.vistana.com/dcm/v3
-    BASE_URL_STAGED: https://api.vistana.com/dcm/v3/staged
-    API_KEY: gvvw42j9kjnke8dxuqs9tbke
-    ```
+
+    * __BASE_URL__: `https://api.vistana.com/dcm/v3`
+    * __BASE_URL_STAGED__: `https://api.vistana.com/dcm/v3/staged`
+    * __API_KEY__: `gvvw42j9kjnke8dxuqs9tbkem`
+
 
     #### QA:
-    ```
-    BASE_URL: https://api-qa.vistana.com/dcm/v3
-    BASE_URL_STAGED: https://api-qa.vistana.com/dcm/v3/staged
-    API_KEY: y368m7ube7wmpk6c4a8ntd6d
-    ```
+
+    * __BASE_URL__: `https://api-qa.vistana.com/dcm/v3`
+    * __BASE_URL_STAGED__: `https://api-qa.vistana.com/dcm/v3/staged`
+    * __API_KEY__: `y368m7ube7wmpk6c4a8ntd6dw`
 
     #### QA2:
-    ```
-    BASE_URL: https://api-qa.vistana.com/dcm/qa2/v3
-    BASE_URL_STAGED: https://api-qa.vistana.com/dcm/qa2/v3/staged
-    API_KEY: y368m7ube7wmpk6c4a8ntd6d
-    ```
+
+    * __BASE_URL__: `https://api-qa.vistana.com/dcm/qa2/v3`
+    * __BASE_URL_STAGED__: `https://api-qa.vistana.com/dcm/qa2/v3/staged`
+    * __API_KEY__: `y368m7ube7wmpk6c4a8ntd6dw`
 
     #### Staging:
-    ```
-    BASE_URL: https://api-qa.vistana.com/dcm/v3/staged
-    BASE_URL_STAGED: https://api-qa.vistana.com/dcm/stg/v3/staged
-    API_KEY: y368m7ube7wmpk6c4a8ntd6d
-    ```
+
+    * __BASE_URL__: `https://api-qa.vistana.com/dcm/v3/staged`
+    * __BASE_URL_STAGED__: `https://api-qa.vistana.com/dcm/stg/v3/staged`
+    * __API_KEY__: `y368m7ube7wmpk6c4a8ntd6dw`
 
     ## Authentication
 
