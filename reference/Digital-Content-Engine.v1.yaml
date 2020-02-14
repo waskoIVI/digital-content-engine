@@ -97,9 +97,9 @@ schemes:
 securityDefinitions:
   api_key:
     type: apiKey
-    name: '{api_key}'
+    name: api_key
     in: header
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sodales lobortis quam ac iaculis. Aliquam iaculis semper commodo. Morbi non urna id dui convallis aliquet vitae vitae ipsum. Quisque ut est mollis, facilisis libero finibus, lacinia felis. Nullam fringilla, ante sit amet sollicitudin porttitor, nisl libero tempor odio, nec dapibus lorem nisi blandit dolor. Integer condimentum ligula metus, a sodales ipsum blandit sit amet. In sollicitudin sapien eu orci varius, et cursus eros vehicula. Nullam congue, urna quis consequat ultrices, velit sem facilisis dui, et porta ex velit a arcu. Proin neque felis, cursus vitae dictum non, commodo sed erat. Sed convallis orci at ornare dignissim. Curabitur gravida euismod sodales. Pellentesque id lacinia massa.'
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sodales lobortis quam ac iaculis. Aliquam iaculis semper commodo. Morbi non urna id dui convallis aliquet vitae vitae ipsum.'
 security:
   - OAuth2: []
 paths:
