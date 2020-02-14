@@ -47,12 +47,10 @@ info:
     ### Mashery Responses
     Successful authentication to Mashery results in request being forwarded to configured endpoint.  Responses correspond to structures defined below.
 
-    ---
-
-    **403 Invalid permissions to endpoint, bad `api_key` or `masheryAccessToken`:**
+    #### __403__: Invalid permissions to endpoint, bad `api_key`:
     ```
     HttpStatus: 403 Forbidden
-    POST https://api-qa.vistana.com/v1/oauth/testendpoint?api_key=[badapikey] HTTP/1.1
+    POST https://api.vistana.com/dcm/v3/{endpoint}?api_key=[badapikey] HTTP/1.1
     Headers:
       X-Mashery-Error-Code: ERR_403_DEVELOPER_INACTIVE
       Content-Type: text/xml
@@ -60,10 +58,10 @@ info:
     Body: Developer Inactive
     ```
 
-    **403 Developer Over Queries Per Second:**
+    #### __403__: Developer Over Queries Per Second
     ```
     HttpStatus: 403 Forbidden
-    POST https://api-qa.vistana.com/v1/oauth/testendpoint?api_key=[apikey] HTTP/1.1
+    POST https://api.vistana.com/dcm/v3/{endpoint}?api_key=[apikey] HTTP/1.1
     Headers:
       X-Mashery-Error-Code: ERR_403_DEVELOPER_OVER_QPS
       Content-Type: text/xml
@@ -71,10 +69,10 @@ info:
     Body: Developer Over Qps
     ```
 
-    **596 Service Not Found:**
+    #### __596__: Service Not Found
     ```
     HttpStatus: 596
-    POST https://api-qa.vistana.com/v1/oauth/fakeendpoint?api_key=[apikey] HTTP/1.1
+    POST https://api.vistana.com/dcm/v3/{badendpoint}?api_key=[apikey] HTTP/1.1
     Headers:
       X-Mashery-Error-Code: ERR_596_SERVICE_NOT_FOUND
       Content-Type: text/xml
@@ -82,10 +80,10 @@ info:
     Body: 596 Service Not Found
     ```
 
-    **504 Gateway Timeout (Request from endpoint timed out):**
+    #### __504__: Gateway Timeout
     ```
     HttpStatus: 504
-    POST https://api-qa.vistana.com/v1/oauth/endpoint HTTP/1.1
+    POST https://api.vistana.com/dcm/v3/{endpoint} HTTP/1.1
     Headers:
       X-Mashery-Error-Code: ERR_504_GATEWAY_TIMEOUT
       Content-Type: text/xml
@@ -96,7 +94,7 @@ info:
     name: Michael Waskiewicz
     email: michael.waskiewicz@vistana.com
 host: api.vistana.com
-basePath: /dcm/v3/oauth
+basePath: /dcm/v3
 schemes:
   - https
 securityDefinitions:
@@ -3623,3 +3621,7 @@ definitions:
 parameters: {}
 tags:
   - name: properties
+produces:
+  - application/json
+consumes:
+  - multipart/form-data
