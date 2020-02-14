@@ -113,6 +113,10 @@ paths:
 
         https://api.vistana.com/dcm/v1/oauth/properties
       parameters:
+        - type: string
+          in: query
+          name: scope
+          description: ''
         - in: query
           name: metas-only
           type: string
@@ -372,6 +376,7 @@ paths:
               default: 'no-cache, no-store, must-revalidate'
       produces:
         - application/json
+      operationId: get-properties-all
   '/properties/{propertyid}':
     get:
       summary: Properties — Single Property
@@ -2855,6 +2860,7 @@ paths:
         - application/json
       security:
         - api_key: []
+      operationId: get-ads
   '/ads/{brand}/{placementid}/{mode}/{pillar}/{resortid}/{usertype}':
     get:
       summary: Ads — Single Detail
@@ -2996,7 +3002,7 @@ paths:
               default: 'no-cache, no-store, must-revalidate'
       produces:
         - application/json
-      operationId: ''
+      operationId: get-ads-with-params
   '/properties/{propertyid}/events':
     get:
       responses:
