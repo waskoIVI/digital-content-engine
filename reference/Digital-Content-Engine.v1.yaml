@@ -5,7 +5,7 @@ info:
   description: |
     <h3>Welcome to the Digital Content Engine (DCE)!</h3>
 
-    The DCE is a Jahia content repository and RESTful API that delivers property and property-related information to a variety of consuming applications. As well, the DCE delivers content managed "structured" data.
+    The DCE is a Jahia content repository and RESTful API that delivers Marriott and Vistana property and property-related information to a variety of consuming applications. As well, the DCE delivers content managed "structured" data.
 
     Calls are processed through Mashery. All endpoints are HTTPS only and are subject to rate limiting rate limiting (by both queries per second and queries per day).
 
