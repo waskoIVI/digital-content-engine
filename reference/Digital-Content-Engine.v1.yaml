@@ -2,87 +2,7 @@ swagger: '2.0'
 info:
   version: '1.0'
   title: Digital Content Engine API Documentation
-  description: |
-    <h3>Welcome to the Digital Content Engine (DCE)!</h3>
-    
-    The DCE is a Jahia content repository and RESTful API that delivers property and property-related information to a variety of consuming applications. As well, the DCE delivers content managed "structured" data 
-    
-    Calls are facilitated using [Mashery API Services](https://www.mashery.com/).  All endpoints are only accessible over https and are located at https://api.vistana.com (https://api-qa.vistana.com for nonprod).
-
-    Mashery is used for endpoint authentication as well as rate limiting (by both queries per second and queries per day).
-
-    ## Base URLs
-
-    ##### Production:
-    ```
-    https://api.vistana.com/dcm/{version}/{authtype}/{endpoint}
-    ```
-
-    ##### EXAMPLE
-    ```
-    https://api.vistana.com/dcm/v1/oauth/properties
-    ```
-
-    ##### QA:
-    ```
-    https://api-qa.vistana.com/coh/{version}/{authtype}/{endpoint}
-    ```
-
-    ##### EXAMPLE
-    ```
-    https://api-qa.vistana.com/dcm/v1/oauth/properties
-    ```
-
-    ## Limits
-    By default api keys are limited to 10 queries per second with a maximum of 25000 requests per day.
-
-    ## Mashery
-    For more information on specific service details related to login, registration, and account updates. Please refer to the Vistana Mobile API Documentation. There you will find specific details on how to register your device and retrieve an OAuth token.
-
-    ### Mashery Responses
-    Successful authentication to Mashery results in request being forwarded to configured endpoint.  Responses correspond to structures defined below.
-
-    Failure to authenticate or exceeding rate limits result in the following:
-    * 403 Invalid permissions to endpoint, bad `api_key` or `masheryAccessToken`:
-    ```
-    HttpStatus: 403 Forbidden
-    POST https://api-qa.vistana.com/v1/oauth/testendpoint?api_key=[badapikey] HTTP/1.1
-    Headers:
-      X-Mashery-Error-Code: ERR_403_DEVELOPER_INACTIVE
-      Content-Type: text/xml
-      X-Mashery-Responder: prod-j-worker-us-east-1b-121.mashery.com
-    Body: <h1>Developer Inactive</h1>
-    ```
-    * 403 Developer Over Queries Per Second:
-    ```
-    HttpStatus: 403 Forbidden
-    POST https://api-qa.vistana.com/v1/oauth/testendpoint?api_key=[apikey] HTTP/1.1
-    Headers:
-      X-Mashery-Error-Code: ERR_403_DEVELOPER_OVER_QPS
-      Content-Type: text/xml
-      X-Mashery-Responder: prod-j-worker-us-east-1b-121.mashery.com
-    Body: <h1>Developer Over Qps</h1>
-    ```
-    * 596 Service Not Found:
-    ```
-    HttpStatus: 596
-    POST https://api-qa.vistana.com/v1/oauth/fakeendpoint?api_key=[apikey] HTTP/1.1
-    Headers:
-      X-Mashery-Error-Code: ERR_596_SERVICE_NOT_FOUND
-      Content-Type: text/xml
-      X-Mashery-Responder: prod-j-worker-us-east-1b-121.mashery.com
-    Body: <h1>596 Service Not Found</h1>
-    ```
-    * 504 Gateway Timeout (Request from endpoint timed out):
-    ```
-    HttpStatus: 504
-    POST https://api-qa.vistana.com/v1/oauth/endpoint HTTP/1.1
-    Headers:
-      X-Mashery-Error-Code: ERR_504_GATEWAY_TIMEOUT
-      Content-Type: text/xml
-      X-Mashery-Responder: prod-j-worker-us-east-1b-121.mashery.com
-    Body: <h1>504 Gateway Timeout</h1>
-    ```
+  description: "<h3>Welcome to the Digital Content Engine (DCE)!</h3>\n\nThe DCE is a Jahia content repository and RESTful API that delivers property and property-related information to a variety of consuming applications. As well, the DCE delivers content managed \"structured\" data \n\nCalls are facilitated using [Mashery API Services](https://www.mashery.com/).  All endpoints are only accessible over https and are located at https://api.vistana.com (https://api-qa.vistana.com for nonprod).\n\nMashery is used for endpoint authentication as well as rate limiting (by both queries per second and queries per day).\n\n## Base URLs\n\n##### Production:\n```\nhttps://api.vistana.com/dcm/{version}/{authtype}/{endpoint}\n```\n\n##### EXAMPLE\n```\nhttps://api.vistana.com/dcm/v1/oauth/properties\n```\n\n##### QA:\n```\nhttps://api-qa.vistana.com/coh/{version}/{authtype}/{endpoint}\n```\n\n##### EXAMPLE\n```\nhttps://api-qa.vistana.com/dcm/v1/oauth/properties\n```\n\n## Limits\nBy default api keys are limited to 10 queries per second with a maximum of 25000 requests per day.\n\n## Mashery\nFor more information on specific service details related to login, registration, and account updates. Please refer to the Vistana Mobile API Documentation. There you will find specific details on how to register your device and retrieve an OAuth token.\n\n### Mashery Responses\nSuccessful authentication to Mashery results in request being forwarded to configured endpoint.  Responses correspond to structures defined below.\n\nFailure to authenticate or exceeding rate limits result in the following:\n* 403 Invalid permissions to endpoint, bad `api_key` or `masheryAccessToken`:\n```\nHttpStatus: 403 Forbidden\nPOST https://api-qa.vistana.com/v1/oauth/testendpoint?api_key=[badapikey] HTTP/1.1\nHeaders:\n  X-Mashery-Error-Code: ERR_403_DEVELOPER_INACTIVE\n  Content-Type: text/xml\n  X-Mashery-Responder: prod-j-worker-us-east-1b-121.mashery.com\nBody: <h1>Developer Inactive</h1>\n```\n* 403 Developer Over Queries Per Second:\n```\nHttpStatus: 403 Forbidden\nPOST https://api-qa.vistana.com/v1/oauth/testendpoint?api_key=[apikey] HTTP/1.1\nHeaders:\n  X-Mashery-Error-Code: ERR_403_DEVELOPER_OVER_QPS\n  Content-Type: text/xml\n  X-Mashery-Responder: prod-j-worker-us-east-1b-121.mashery.com\nBody: <h1>Developer Over Qps</h1>\n```\n* 596 Service Not Found:\n```\nHttpStatus: 596\nPOST https://api-qa.vistana.com/v1/oauth/fakeendpoint?api_key=[apikey] HTTP/1.1\nHeaders:\n  X-Mashery-Error-Code: ERR_596_SERVICE_NOT_FOUND\n  Content-Type: text/xml\n  X-Mashery-Responder: prod-j-worker-us-east-1b-121.mashery.com\nBody: <h1>596 Service Not Found</h1>\n```\n* 504 Gateway Timeout (Request from endpoint timed out):\n```\nHttpStatus: 504\nPOST https://api-qa.vistana.com/v1/oauth/endpoint HTTP/1.1\nHeaders:\n  X-Mashery-Error-Code: ERR_504_GATEWAY_TIMEOUT\n  Content-Type: text/xml\n  X-Mashery-Responder: prod-j-worker-us-east-1b-121.mashery.com\nBody: <h1>504 Gateway Timeout</h1>\n```\n"
   contact:
     name: Michael Waskiewicz
     email: michael.waskiewicz@vistana.com
@@ -142,7 +62,7 @@ paths:
         - in: query
           name: metas-only
           type: string
-          description: Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.
+          description: 'Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.'
         - in: query
           name: limit
           type: string
@@ -159,6 +79,10 @@ paths:
           name: list
           type: string
           description: 'Use **?list={fieldName}** when you would like the response to return only the values of a certain field. This is useful when you would like to get a list of, say, article titles for a blog. This featured only works with non-object data.'
+        - type: string
+          in: header
+          name: api_key
+          description: ''
       tags:
         - Properties
       responses:
@@ -435,7 +359,7 @@ paths:
           name: metas-only
           type: boolean
           default: false
-          description: Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.
+          description: 'Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.'
         - in: query
           name: list
           type: string
@@ -699,7 +623,7 @@ paths:
         - in: query
           name: metas-only
           type: string
-          description: Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.
+          description: 'Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.'
         - in: query
           name: limit
           type: string
@@ -830,14 +754,7 @@ paths:
   '/properties/{propertyid}/activities/{nodename}':
     get:
       summary: "Activities —\_Single Activity Detail"
-      description: |-
-        Returns activity information for a specific property.
-
-        **EXAMPLE ENDPOINT:** 
-
-        https://api.vistana.com/dcm/v1/oauth/properties/wkorv/activities/swimming-with-dolphins
-
-        https://api.vistana.com/dcm/v1/oauth/properties/wkorv/activities/9386dde8-b382-4d90-81c0-2f6cb624e112
+      description: "Returns activity information for a specific property.\n\n**EXAMPLE ENDPOINT:** \n\nhttps://api.vistana.com/dcm/v1/oauth/properties/wkorv/activities/swimming-with-dolphins\n\nhttps://api.vistana.com/dcm/v1/oauth/properties/wkorv/activities/9386dde8-b382-4d90-81c0-2f6cb624e112"
       parameters:
         - in: path
           name: propertyid
@@ -868,7 +785,7 @@ paths:
         - in: query
           name: metas-only
           type: string
-          description: Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.
+          description: 'Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.'
         - in: query
           name: list
           type: string
@@ -1008,7 +925,7 @@ paths:
         - in: query
           name: metas-only
           type: string
-          description: Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.
+          description: 'Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.'
         - in: query
           name: limit
           type: string
@@ -1158,7 +1075,7 @@ paths:
         - in: query
           name: metas-only
           type: string
-          description: Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.
+          description: 'Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.'
         - in: query
           name: list
           type: string
@@ -1254,12 +1171,7 @@ paths:
   '/properties/{propertyid}/awards':
     get:
       summary: "Awards —\_All"
-      description: |
-        Returns all awards for a specific property.
-
-        **EXAMPLE ENDPOINT:** 
-
-        https://api.vistana.com/dcm/v1/oauth/properties/svv/awards
+      description: "Returns all awards for a specific property.\n\n**EXAMPLE ENDPOINT:** \n\nhttps://api.vistana.com/dcm/v1/oauth/properties/svv/awards\n"
       parameters:
         - in: path
           name: propertyid
@@ -1281,7 +1193,7 @@ paths:
         - in: query
           name: metas-only
           type: string
-          description: Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.
+          description: 'Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.'
         - in: query
           name: limit
           type: string
@@ -1406,7 +1318,7 @@ paths:
         - in: query
           name: metas-only
           type: string
-          description: Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.
+          description: 'Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.'
         - in: query
           name: list
           type: string
@@ -1504,7 +1416,7 @@ paths:
         - in: query
           name: metas-only
           type: string
-          description: Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.
+          description: 'Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.'
         - in: query
           name: limit
           type: string
@@ -1689,7 +1601,7 @@ paths:
         - in: query
           name: metas-only
           type: string
-          description: Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.
+          description: 'Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.'
         - in: query
           name: list
           type: string
@@ -1846,7 +1758,7 @@ paths:
         - in: query
           name: metas-only
           type: string
-          description: Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.
+          description: 'Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.'
         - in: query
           name: limit
           type: string
@@ -1985,7 +1897,7 @@ paths:
         - in: query
           name: metas-only
           type: string
-          description: Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.
+          description: 'Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.'
         - in: query
           name: list
           type: string
@@ -2096,7 +2008,7 @@ paths:
         - in: query
           name: metas-only
           type: string
-          description: Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.
+          description: 'Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.'
         - in: query
           name: limit
           type: string
@@ -2231,7 +2143,7 @@ paths:
         - in: query
           name: metas-only
           type: string
-          description: Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.
+          description: 'Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.'
         - in: query
           name: list
           type: string
@@ -2342,7 +2254,7 @@ paths:
         - in: query
           name: metas-only
           type: string
-          description: Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.
+          description: 'Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.'
         - in: query
           name: limit
           type: string
@@ -2462,12 +2374,7 @@ paths:
   '/properties/{propertyid}/villas/{nodename}':
     get:
       summary: "Villas —\_Single Villa Detail"
-      description: |
-        Returns specific villa information for a specific property.
-
-        **EXAMPLE ENDPOINT:** 
-
-        https://api.vistana.com/dcm/v1/oauth/properties/svv/villas/studio-bedroom
+      description: "Returns specific villa information for a specific property.\n\n**EXAMPLE ENDPOINT:** \n\nhttps://api.vistana.com/dcm/v1/oauth/properties/svv/villas/studio-bedroom\n"
       parameters:
         - in: path
           name: propertyid
@@ -2498,7 +2405,7 @@ paths:
         - in: query
           name: metas-only
           type: string
-          description: Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.
+          description: 'Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.'
         - in: query
           name: list
           type: string
@@ -2589,12 +2496,7 @@ paths:
   /vacation-ideas:
     get:
       summary: "Articles —\_All"
-      description: |
-        Returns a full "vacation ideas" object.
-
-        **EXAMPLE ENDPOINT:** 
-
-        https://api.vistana.com/dcm/v1/oauth/vacation-ideas
+      description: "Returns a full \"vacation ideas\" object.\n\n**EXAMPLE ENDPOINT:** \n\nhttps://api.vistana.com/dcm/v1/oauth/vacation-ideas\n"
       parameters:
         - in: query
           name: limit
@@ -2680,16 +2582,7 @@ paths:
   '/vacation-ideas/{tagnodename}':
     get:
       summary: "Articles —\_Single Article OR Articles Tag Search"
-      description: |
-        Returns either a tag response OR detail page for vacation ideas.
-
-        **EXAMPLE ENDPOINT #1:** 
-
-        https://api.vistana.com/dcm/v1/oauth/vacation-ideas/wkorv,featured
-
-        **EXAMPLE ENDPOINT #2:** 
-
-        https://api.vistana.com/dcm/v1/oauth/vacation-ideas/15-words-to-learn-before-visiting-hawaii
+      description: "Returns either a tag response OR detail page for vacation ideas.\n\n**EXAMPLE ENDPOINT #1:** \n\nhttps://api.vistana.com/dcm/v1/oauth/vacation-ideas/wkorv,featured\n\n**EXAMPLE ENDPOINT #2:** \n\nhttps://api.vistana.com/dcm/v1/oauth/vacation-ideas/15-words-to-learn-before-visiting-hawaii\n"
       parameters:
         - in: path
           name: tagnodename
@@ -2808,11 +2701,14 @@ paths:
         - in: query
           name: metas-only
           type: string
-          description: Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.
+          description: 'Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.'
         - in: query
           name: list
           type: string
           description: 'Use **?list={fieldName}** when you would like the response to return only the values of a certain field. This is useful when you would like to get a list of, say, article titles for a blog. This featured only works with non-object data.'
+        - type: string
+          in: header
+          name: api_key
       tags:
         - Ads
       responses:
@@ -2943,7 +2839,7 @@ paths:
         - in: query
           name: metas-only
           type: string
-          description: Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.
+          description: 'Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.'
         - in: query
           name: limit
           type: string
@@ -2960,6 +2856,9 @@ paths:
           name: list
           type: string
           description: 'Use **?list={fieldName}** when you would like the response to return only the values of a certain field. This is useful when you would like to get a list of, say, article titles for a blog. This featured only works with non-object data.'
+        - type: string
+          in: header
+          name: api_key
       tags:
         - Ads
       responses:
@@ -3047,6 +2946,7 @@ paths:
               default: 'no-cache, no-store, must-revalidate'
       produces:
         - application/json
+      operationId: ''
   '/properties/{propertyid}/events':
     get:
       responses:
@@ -3146,7 +3046,7 @@ paths:
         - in: query
           name: metas-only
           type: string
-          description: Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.
+          description: 'Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.'
         - in: query
           name: limit
           type: string
@@ -3163,6 +3063,8 @@ paths:
           name: list
           type: string
           description: 'Use **?list={fieldName}** when you would like the response to return only the values of a certain field. This is useful when you would like to get a list of, say, article titles for a blog. This featured only works with non-object data.'
+        - type: string
+          in: header
       produces:
         - application/json
       tags:
@@ -3270,7 +3172,7 @@ paths:
         - in: query
           name: metas-only
           type: string
-          description: Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.
+          description: 'Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.'
         - in: query
           name: limit
           type: string
@@ -3291,6 +3193,27 @@ paths:
         - application/json
       tags:
         - Properties
+  /rooms:
+    get:
+      summary: Rooms
+      responses: {}
+      operationId: get-rooms
+      tags:
+        - Rooms
+  /content:
+    get:
+      summary: Content
+      tags:
+        - Content
+      responses: {}
+      operationId: get-content
+  /refs:
+    get:
+      summary: Refs
+      tags:
+        - Refs
+      responses: {}
+      operationId: get-refs
 definitions:
   ugctags:
     type: array
