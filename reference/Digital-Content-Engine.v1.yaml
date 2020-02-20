@@ -129,6 +129,7 @@ paths:
           description: 'Set **?metas-only=true** to get a light response that includes only the response meta info. This is particularly useful for getting an endpoint count without the full data payload.'
           enum:
             - 'true'
+          default: 'false'
         - in: query
           name: limit
           type: string
@@ -3265,13 +3266,21 @@ paths:
         - Refs
       responses: {}
       operationId: get-refs
-  /content:
+  '/content{site-key}.{folder-structure}':
     get:
       summary: Content
       tags:
         - Content
       responses: {}
       operationId: get-content
+    parameters:
+      - type: string
+        name: site-key
+        in: path
+        required: true
+      - type: string
+        name: folder-structure
+        in: path
   /rooms:
     get:
       summary: Rooms
