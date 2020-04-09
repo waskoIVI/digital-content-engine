@@ -360,6 +360,1314 @@ paths:
             Cache-Control:
               type: string
               default: 'public, max-age=86400'
+          examples:
+            'Sample "All Properties" Response (2 Props)':
+              metas:
+                count: 2
+                limit: '2'
+                context: limit=2
+                type: properties
+                status: 200
+              data:
+                - tripadvisor: 'https://www.tripadvisor.com/Hotel_Review-g150807-d1145564-Reviews-The_Westin_Lagunamar_Ocean_Resort_Villas_Spa-Cancun_Yucatan_Peninsula.html'
+                  country: Mexico
+                  twitterTitle: The Westin Lagunamar Ocean Resort
+                  resourceId: 87f0097a-23ad-4739-ac35-8207ad69819d
+                  documents:
+                    - nodename: wlor-property-map
+                      resourceId: b2fb96bb-5a38-4bc4-ab0b-4c2ed19fac0e
+                      persona:
+                        - Anonymous
+                        - Guest
+                        - Owner
+                      name: 'The Westin Lagunamar Ocean Resort Property, Map'
+                      referenceID: map
+                  accessibility:
+                    accessibleGuestRoom: null
+                    accessiblePublicSpaces:
+                      - Public entrance alternative
+                      - Registration Desk Pathway
+                      - Restaurant(s)/Lounge(s)
+                      - Pool pathway
+                      - 'Spa '
+                      - 'Fitness Center '
+                      - 'Business Center '
+                      - Pool accessible
+                      - Registration desk
+                      - Accessible Self-parking
+                      - Accessible guest rooms with 32” wide doorways
+                      - 'Accessible route from public entrance to accessible guest rooms '
+                      - Concierge desk
+                      - Meeting room(s) with assistive listening devices
+                      - Service animals are welcome
+                      - 'Transfer shower '
+                      - Roll-in shower
+                      - 'Electrical outlets, lowered'
+                      - Bathtub grab bars
+                      - 'Shower wand, adjustable'
+                      - 'TTY/TTD available '
+                      - Flashing door knockers
+                      - 'Deadbolt locks, lowered'
+                      - 'Viewports, lowered'
+                      - 'Vanities, accessible'
+                      - Toilet seat at wheelchair height
+                      - Bathroom grab bars
+                      - Alarm clock telephone ringers
+                      - 'TV with close-captioning '
+                      - Hearing accessible rooms and/or kits
+                      - Elevators
+                  instagram: 'https://instagram.com/westinlagunamar'
+                  type: Resort
+                  propertyIDSun: '23'
+                  openGraphTitle: The Westin Lagunamar Ocean Resort
+                  twitter: 'https://twitter.com/WestinLagunamar'
+                  state: Quintana Roo
+                  brand:
+                    appleStoreLink: 'https://itunes.apple.com/us/app/westin-vacation-club/id1342706290?mt=8'
+                    nodename: westin
+                    resourceId: 0aec915b-631e-43a4-85bb-38ef6de2e9f0
+                    featured: 'false'
+                    images:
+                      - nodename: westin-logo
+                        resourceId: 55012988-51bb-4fab-9d4c-fd20fdc99bd3
+                        featured: 'false'
+                        name: Westin Logo
+                        photo:
+                          '4:3':
+                            nodename: 19-OOC-0447--wvc_logo-704x520.jpg
+                            path: 'https://content-qa.vistana.com/files/live/sites/vistana-digital-content-manager/files/images/brand-logos/19-OOC-0447--wvc_logo-704x520.jpg'
+                            width: 704
+                            ratio: '4:3'
+                            height: 520
+                        referenceID: logo
+                      - nodename: westin-app-icon
+                        resourceId: 85a5c4e9-9afa-40ac-a125-20e16a626f54
+                        featured: 'false'
+                        name: Westin App Icon
+                        photo:
+                          '1:1':
+                            nodename: 19-OOC-0447-wvc_app_icon-520x520.jpg
+                            path: 'https://content-qa.vistana.com/files/live/sites/vistana-digital-content-manager/files/images/app-icons/19-OOC-0447-wvc_app_icon-520x520.jpg'
+                            width: 520
+                            ratio: '1:1'
+                            height: 520
+                        referenceID: icon
+                    name: Westin
+                    placepassUrl: 'https://westinvacationclub.placepass.com'
+                    googlePlayStoreLink: 'https://play.google.com/store/apps/details?id=com.vistana.app.westin'
+                  slug: the-westin-lagunamar-ocean-resort
+                  zip: '77500'
+                  images:
+                    - nodename: wlor-property-main
+                      resourceId: e5bdbf99-aef0-490f-8e1b-28b88b3612fc
+                      featured: 'false'
+                      name: The Westin Lagunamar Ocean Resort Property
+                      photo:
+                        '16:9':
+                          nodename: 17-OOC-1265-Hero-WLOR-wes5646po.128431-16x9.png
+                          path: 'https://content-qa.vistana.com/files/live/sites/vistana-digital-content-manager/files/images/properties/wlor/17-OOC-1265-Hero-WLOR-wes5646po.128431-16x9.png'
+                          width: 1300
+                          ratio: '16:9'
+                          height: 731
+                        '3:2':
+                          nodename: 17-OOC-1265-Hero-WLOR-wes5646po.128431-3x2.png
+                          path: 'https://content-qa.vistana.com/files/live/sites/vistana-digital-content-manager/files/images/properties/wlor/17-OOC-1265-Hero-WLOR-wes5646po.128431-3x2.png'
+                          width: 1300
+                          ratio: '3:2'
+                          height: 867
+                        '4:3':
+                          nodename: 17-OOC-1265-Hero-WLOR-wes5646po.128431-4x3.png
+                          path: 'https://content-qa.vistana.com/files/live/sites/vistana-digital-content-manager/files/images/properties/wlor/17-OOC-1265-Hero-WLOR-wes5646po.128431-4x3.png'
+                          width: 1300
+                          ratio: '4:3'
+                          height: 975
+                        '6:3':
+                          nodename: 17-OOC-1265-Hero-WLOR-wes5646po.128431-6x3.png
+                          path: 'https://content-qa.vistana.com/files/live/sites/vistana-digital-content-manager/files/images/properties/wlor/17-OOC-1265-Hero-WLOR-wes5646po.128431-6x3.png'
+                          width: 1300
+                          ratio: '6:3'
+                          height: 650
+                      referenceID: main
+                    - nodename: wlor-property-logo
+                      resourceId: 9a02ed50-062f-4b65-9dfd-66d845f42497
+                      featured: 'false'
+                      name: The Westin Lagunamar Ocean Resort Property
+                      referenceID: logo
+                    - nodename: wlor-property-qrcode
+                      resourceId: e5bdbf99-aef0-490f-8e1b-28b88b3612fc
+                      featured: 'false'
+                      name: The Westin Lagunamar Ocean Resort Property
+                      photo:
+                        '1:1':
+                          nodename: 19-OOC-0447-wlor-qr-520x520.jpg
+                          path: 'https://content-qa.vistana.com/files/live/sites/vistana-digital-content-manager/files/images/properties/wlor/19-OOC-0447-wlor-qr-520x520.jpg'
+                          width: 520
+                          ratio: '1:1'
+                          height: 520
+                      referenceID: qrcode
+                    - nodename: wlor-property-map
+                      resourceId: 1d6b908d-033a-4fdb-ae5f-6eb93d8023f0
+                      featured: 'false'
+                      name: Map
+                      photo:
+                        '3:2':
+                          nodename: 16-OOC-0909__WLOR_Resort_Site_Map_NO_ICONS_12_16-5143-5x4.png
+                          path: 'https://content-qa.vistana.com/files/live/sites/vistana-digital-content-manager/files/images/map/16-OOC-0909__WLOR_Resort_Site_Map_NO_ICONS_12_16-5143-5x4.png'
+                          width: 5143
+                          ratio: '3:2'
+                          height: 3572
+                      referenceID: map
+                  persona:
+                    - Anonymous
+                    - Guest
+                    - Owner
+                  openGraphDescription: Have an unforgettable vacation at The Westin Lagunamar Ocean Resort
+                  coordinateLatitude: '21.117986'
+                  twitterDescription: Have an unforgettable vacation at The Westin Lagunamar Ocean Resort
+                  name: The Westin Lagunamar Ocean Resort
+                  checkOut: 10 a.m.
+                  hasPlacepass: 'true'
+                  announcements:
+                    specialConditions:
+                      - startPeriod: '2019-11-07'
+                        endPeriod: '2020-05-07'
+                        displayFrom: '2019-11-07'
+                        shortDescription: Book Activities and Earn Marriott Bonvoy Points
+                        descriptiveText: "Explore over 250,000 activities, adventures and curated experiences \x97 at home or on vacation \x97 and earn Marriott Bonvoy\x99 points each time you book."
+                      - startPeriod: '2020-01-03'
+                        endPeriod: '2020-07-03'
+                        displayFrom: '2020-01-03'
+                        shortDescription: 'We offer free WiFi, free parking & no resort fees!'
+                        descriptiveText: 'Enjoy complimentary wireless Internet in all villas, and public areas. We also offer free on-site parking and do not charge resort fees.'
+                      - startPeriod: '2020-03-17'
+                        endPeriod: '2021-09-30'
+                        displayFrom: '2020-03-17'
+                        shortDescription: null
+                        descriptiveText: 'Daily environmental fee 25.35 pesos added to room folio. Zero entry pool resurface project taking place August 15-September 30, 2020. Other pools and amenities will be open.'
+                      - startPeriod: '2020-03-17'
+                        endPeriod: null
+                        displayFrom: '2020-03-17'
+                        shortDescription: null
+                        descriptiveText: 'Due to COVID-19, some hotel facilities or services may not be available to guests for a period of time.'
+                  youtube: 'https://www.youtube.com/VacationOwnership'
+                  referenceStaff:
+                    - nameLast: Steffanoni
+                      nodename: wlor-concierge-giuseppe-steffanoni
+                      resourceId: 83274bfc-3be3-4b33-b85c-7dbaafd54175
+                      images:
+                        - nodename: wlor-concierge-giuseppe-steffanoni
+                          resourceId: aaf58e07-6571-4685-80da-73399924c592
+                          featured: 'false'
+                          name: Giuseppe Steffanoni
+                          photo:
+                            '3:4':
+                              nodename: Cocierge-WLOR-Giuseppe-Steffanoni-3x4.jpg
+                              path: 'https://content-qa.vistana.com/files/live/sites/vistana-digital-content-manager/files/images/properties/wlor/Cocierge-WLOR-Giuseppe-Steffanoni-3x4.jpg'
+                              width: 855
+                              ratio: '3:4'
+                              height: 1140
+                          referenceID: concierge
+                      nameFirst: Giuseppe
+                      phone: 1-844-260-9083
+                      name: Giuseppe Steffanoni
+                      description: 'Our experienced, on-site Concierge Team will assist you throughout your stay.'
+                      title: Guest Experience Manager
+                      referenceID: concierge
+                    - nameLast: Ibarra
+                      nodename: wlor-oceano-chef-angel-ibarra
+                      resourceId: 8140054d-1add-4b86-b75a-8b5c5c294752
+                      images:
+                        - nodename: wlor-oceano-chef-angel-ibarra
+                          resourceId: 707a37d3-b4ee-43c8-8290-75adfea8d62e
+                          featured: 'false'
+                          name: 'WLOR Oceano, Chef, Angel Ibarra'
+                          photo:
+                            '1:1':
+                              nodename: Dining-WLOR-Oceano-Chef-Angel-1x1.jpg
+                              path: 'https://content-qa.vistana.com/files/live/sites/vistana-digital-content-manager/files/images/staff/chef/Dining-WLOR-Oceano-Chef-Angel-1x1.jpg'
+                              width: 1300
+                              ratio: '1:1'
+                              height: 1300
+                          referenceID: chef
+                      nameFirst: Angel
+                      name: 'Angel Ibarra, Oceano'
+                      description: |
+                        <p>Internationally recognized Chef Angel Ibarra has worked in several countries, always creating menus with innovative dishes that introduce local flavors.</p>
+                      title: Executive Chef
+                      referenceID: chef
+                  code: WLOR
+                  announcementsOverride: |
+                    <h3>HVAC Replacement: through December 2019</h3>
+
+                    <p>The resort has a project underway to upgrade the heating, ventilation, and air conditioning system in the villa buildings. The project began in 2018 and will continue throughout 2019. Villa buildings may be occupied during this time; work will be limited to unoccupied villas.</p>
+
+                    <h3>Hospitality Tax and Environmental Tax</h3>
+
+                    <p>The State of Quintana Roo assesses a hospitality tax that is due upon checkout.</p>
+
+                    <ul>
+                     <li>Studio Premium Villa: US$2.20 per night</li>
+                     <li>One-Bedroom Premium Villa: US$3.71 per night</li>
+                     <li>Two-Bedroom Lockoff Villa: US$5.90 per night</li>
+                    </ul>
+
+                    <p>Effective March 1, 2019, the State of Quintana Roo implemented an environmental and sanitation tax. This nightly tax of $25.35 pesos (roughly US$1.30, depending on the exchange rate) will be based on the type of villa occupied and billed in pesos directly to your folio.</p>
+
+                    <p>These taxes &mdash; charged in Mexican pesos &mdash; are subject to currency conversion with your banking institution and subject to change.</p>
+
+                    <p>&nbsp;</p>
+                  phoneOwnerServices: 1-888-986-9637
+                  city: Cancún
+                  policies:
+                    smokeFree: false
+                    petsAllowed: false
+                    videoCheckOut: false
+                    checkOutTime: '10:00'
+                    internetPolicy: true
+                    checkInTime: '16:00'
+                    expressCheckOut: true
+                    videoBillReview: false
+                    infoPolicies:
+                      - name: General Policies
+                        typeName: General Policies
+                        description: '<ul><li>Check-In Time: 04:00 p.m.</li><li>Check-Out Time: 10:00 a.m.</li><li>Smoke Free: No</li><li>Pets Allowed: No</li><li>Internet: Yes</li><li>Express Check-In: No</li><li>Express Check-Out: Yes</li><li>Video Check-Out: No</li><li>Video Bill Review: No</li></ul>'
+                      - name: Parking
+                        typeName: Parking
+                        description: '<ul><li>Indoor parking</li><li>On-site parking</li><li>Valet parking</li></ul>'
+                      - name: Internet Services
+                        typeName: Internet Services
+                        description: '<ul><li>High Speed: Check email + browse the Web</li><li>Public Area</li></ul>'
+                      - name: Guest Services
+                        typeName: Guest Services
+                        description: '<ul><li>Mobility accessible rooms</li><li>Local restaurant dinner delivery</li><li>Newspaper in lobby</li><li>Grocery shopping service</li><li>Laundry on-site</li><li>Concierge desk</li><li>Foreign exchange</li><li>Housekeeping service daily</li><li>Room service</li><li>Safe deposit boxes, front desk</li><li>Valet dry-cleaning</li><li>Evening turndown service</li></ul>'
+                      - name: Kitchen Amenities
+                        typeName: Kitchen Amenities
+                        description: '<ul><li>Stove</li><li>Table and chairs</li><li>Toaster</li><li>Dishwasher</li><li>Microwave oven</li><li>Pots, pans, serving dishes</li><li>Refrigerator</li><li>Refrigerator with icemaker</li><li>Silverware</li></ul>'
+                      - name: General Room Amenities
+                        typeName: General Room Amenities
+                        description: '<ul><li>Pull-out sofa bed</li><li>Individual climate control</li><li>Pillows: down/feather</li><li>Pillows: foam</li><li>Washer/dryer</li><li>Electrical adapters</li><li>Coffee maker/tea service</li><li>Air conditioning</li><li>Crib/Play Yard</li><li>Alarm clock</li><li>Iron and ironing board</li><li>Rollaway bed</li><li>Safe</li></ul>'
+                    expressCheckIn: false
+                  description: |
+                    <p>Making its home amid Canc&uacute;n&rsquo;s Mayan ruins and powder-white beaches, this captivating resort gives you the relaxed elegance of the spa, Caribbean waters, and the area&rsquo;s No. 1 shopping venue.This beautiful resort makes its home amid the fascinating Mayan ruins and powder-white beaches of Mexico&rsquo;s most sought-after destination. Whether you crave the relaxed elegance of the spa, the crystal-clear Caribbean waters, or strolling the area&rsquo;s No. 1 shopping venue, you&rsquo;re sure to find your passion and leave wanting more.&nbsp;</p>
+                  locale:
+                    nodename: mexico
+                    resourceId: 9078fe55-827f-4948-851b-83eb5a4ba186
+                    featured: 'false'
+                    name: Mexico
+                    description: |
+                      <p>Sunny and tropical, Mexico beckons with white-sand beaches and a festive vibe. But that doesn&rsquo;t mean you can&rsquo;t kick back, relax and explore at your own pace. Take advantage of endless adventures on the water at Xel-Ha or explore the ancient ruins at Chich&eacute;n Itz&aacute;. Enjoy an authentic Mexican fiesta or indulge in premier shopping venues for the perfect souvenir. Then return to your stylish villa resort at the end of every fun-filled day to recharge for the next.</p>
+                    ugcTags:
+                      - cancun
+                      - loscabos
+                      - mexico
+                      - wlcrv
+                      - wlor
+                  marshaCode: CUNLI
+                  coordinateLongitude: '-86.757060'
+                  scope: vse
+                  marriottData:
+                    accessibility:
+                      accessibleGuestRoom: null
+                      accessiblePublicSpaces:
+                        - Public entrance alternative
+                        - Registration Desk Pathway
+                        - Restaurant(s)/Lounge(s)
+                        - Pool pathway
+                        - 'Spa '
+                        - 'Fitness Center '
+                        - 'Business Center '
+                        - Pool accessible
+                        - Registration desk
+                        - Accessible Self-parking
+                        - Accessible guest rooms with 32” wide doorways
+                        - 'Accessible route from public entrance to accessible guest rooms '
+                        - Concierge desk
+                        - Meeting room(s) with assistive listening devices
+                        - Service animals are welcome
+                        - 'Transfer shower '
+                        - Roll-in shower
+                        - 'Electrical outlets, lowered'
+                        - Bathtub grab bars
+                        - 'Shower wand, adjustable'
+                        - 'TTY/TTD available '
+                        - Flashing door knockers
+                        - 'Deadbolt locks, lowered'
+                        - 'Viewports, lowered'
+                        - 'Vanities, accessible'
+                        - Toilet seat at wheelchair height
+                        - Bathroom grab bars
+                        - Alarm clock telephone ringers
+                        - 'TV with close-captioning '
+                        - Hearing accessible rooms and/or kits
+                        - Elevators
+                    policies:
+                      - name: General Policies
+                        infoList:
+                          - 'Check-In Time: 04:00 p.m.'
+                          - 'Check-Out Time: 10:00 a.m.'
+                          - 'Smoke Free: No'
+                          - 'Pets Allowed: No'
+                          - 'Internet: Yes'
+                          - 'Express Check-In: No'
+                          - 'Express Check-Out: Yes'
+                          - 'Video Check-Out: No'
+                          - 'Video Bill Review: No'
+                      - name: Parking
+                        infoList:
+                          - Indoor parking
+                          - On-site parking
+                          - Valet parking
+                      - name: Internet Services
+                        infoList:
+                          - 'High Speed: Check email + browse the Web'
+                          - Public Area
+                      - name: Guest Services
+                        infoList:
+                          - Mobility accessible rooms
+                          - Local restaurant dinner delivery
+                          - Newspaper in lobby
+                          - Grocery shopping service
+                          - Laundry on-site
+                          - Concierge desk
+                          - Foreign exchange
+                          - Housekeeping service daily
+                          - Room service
+                          - 'Safe deposit boxes, front desk'
+                          - Valet dry-cleaning
+                          - Evening turndown service
+                      - name: Kitchen Amenities
+                        infoList:
+                          - Stove
+                          - Table and chairs
+                          - Toaster
+                          - Dishwasher
+                          - Microwave oven
+                          - 'Pots, pans, serving dishes'
+                          - Refrigerator
+                          - Refrigerator with icemaker
+                          - Silverware
+                      - name: General Room Amenities
+                        infoList:
+                          - Pull-out sofa bed
+                          - Individual climate control
+                          - 'Pillows: down/feather'
+                          - 'Pillows: foam'
+                          - Washer/dryer
+                          - Electrical adapters
+                          - Coffee maker/tea service
+                          - Air conditioning
+                          - Crib/Play Yard
+                          - Alarm clock
+                          - Iron and ironing board
+                          - Rollaway bed
+                          - Safe
+                    announcements:
+                      - text: "Explore over 250,000 activities, adventures and curated experiences \x97 at home or on vacation \x97 and earn Marriott Bonvoy\x99 points each time you book."
+                        title: Book Activities and Earn Marriott Bonvoy Points
+                        effectiveDate: '2019-11-07'
+                        expirationDate: '2020-05-07'
+                      - text: 'Enjoy complimentary wireless Internet in all villas, and public areas. We also offer free on-site parking and do not charge resort fees.'
+                        title: 'We offer free WiFi, free parking & no resort fees!'
+                        effectiveDate: '2020-01-03'
+                        expirationDate: '2020-07-03'
+                      - text: 'Daily environmental fee 25.35 pesos added to room folio. Zero entry pool resurface project taking place August 15-September 30, 2020. Other pools and amenities will be open.'
+                        title: null
+                        effectiveDate: '2020-03-17'
+                        expirationDate: '2021-09-30'
+                      - text: 'Due to COVID-19, some hotel facilities or services may not be available to guests for a period of time.'
+                        title: null
+                        effectiveDate: '2020-03-17'
+                        expirationDate: null
+                  ugcTags:
+                    - cancun
+                    - mexico
+                    - wlor
+                  phoneMain: 52-998-891-4200
+                  universalPropertyCode: WLORCUNLI
+                  termsConditions: |
+                    <h3>Special Conditions</h3>
+
+                    <p><strong>Tennis Court Resurfacing and Fence Replacement: Aug.&nbsp;26 through Sept.&nbsp;23, 2019</strong><br />
+                    In order to maintain our facilities in optimal condition, tennis courts will be closed temporarily in two phases for scheduled resurfacing and fence replacement. Court #1 will be closed Monday, Aug. 26, 2019, and will reopen on Monday, Sept. 9. Court #2 will be closed Monday, Sept. 9, and will reopen on Monday, Sept. 23. Each court will be isolated from the other during this maintenance to reduce impact on Owners&rsquo; and Guests&rsquo; experience.</p>
+
+                    <p><strong>HVAC Replacement: Through December 2019</strong><br />
+                    The resort has a project underway to upgrade the heating, ventilation, and air conditioning system in the villa buildings. The project began in 2018 and will continue throughout 2019. Villa buildings may be occupied during this time; work will be limited to unoccupied villas.</p>
+
+                    <p><strong>Hospitality Tax and Environmental Tax</strong><br />
+                    The State of Quintana Roo assesses a hospitality tax that is due upon check-out:</p>
+
+                    <ul>
+                     <li>Studio Premium Villa: US$2.20 per night</li>
+                     <li>One-Bedroom Premium Villa: US$3.71 per night</li>
+                     <li>Two-Bedroom Lockoff Villa: US$5.90 per night</li>
+                    </ul>
+
+                    <p>Effective March 1, 2019, the State of Quintana Roo implemented an environmental and sanitation tax. This nightly tax of $25.35 pesos (roughly US$1.30, depending on the exchange rate) will be based on the type of villa occupied and billed in pesos directly to your folio.</p>
+
+                    <p>These taxes are subject to currency conversion with your banking institution and subject to change.</p>
+
+                    <h3>Special Events</h3>
+
+                    <p>Currently, there are no events. Please continue to check back here before you travel for the most updated information.</p>
+
+                    <h3>Accessibility</h3>
+
+                    <p>We are committed to making our facilities, amenities and services accessible to guests with disabilities. Accessibility features in your villa are guaranteed only if confirmed during the reservation process. Please note that The Westin Lagunamar Ocean Resort complies with all ADA requirements.</p>
+
+                    <h3>Age Requirement Policy</h3>
+
+                    <p>Guests must be 18 years or older with photo identification to check in.</p>
+
+                    <h3>Alcohol Policy</h3>
+
+                    <p>Alcoholic beverage service is restricted to those 18 years or older with valid photo identification.</p>
+
+                    <h3>Cancellation Policy &mdash; Ownership Reservations</h3>
+
+                    <p>Vistana&nbsp;Signature Network&trade; (VSN) reservations made during the Home Resort Reservation Period or the VSN&nbsp;Float Period are subject to the following cancellation policy and may be canceled by calling Owner Services prior to the arrival date of the assigned reservation. Failure to cancel a confirmed reservation prior to the arrival date will prevent the restoration of StarOptions<sup>&reg;</sup> for further use.</p>
+
+                    <p>Reservations may be canceled 61 days or greater prior to arrival with no cancellation fee or Usage Restriction.</p>
+
+                    <p>Reservations made 60 days or less prior to arrival may be canceled through the following day after making the reservation (before the end of hours of operation, Eastern Time) with no cancellation fee or Usage Restriction. After this grace period passes, cancellations and modifications to the reservation &mdash; including changes to the arrival or departure date or to Villa type (other than releasing one side of the lockoff for reservations confirmed during the Home Resort Reservation Period) &mdash; will incur cancellation fees. Subsequent usage will be restricted to reservations within 60 days of the new requested arrival date for that Use Year and will not be eligible for StarOptions Banking or points conversion.</p>
+
+                    <p><strong>Cancellation Fees:</strong></p>
+
+                    <ul>
+                     <li><strong>60 days &ndash; 8 days:</strong> $50 cancellation fee</li>
+                     <li><strong>7 days or less:</strong> $75 cancellation fee</li>
+                    </ul>
+
+                    <p>Reservations not affiliated with the Vistana Signature Network may be subject to cancellation fees or use restrictions. Please contact <a href="https://www.vistana.com/contact-us" target="_blank">Owner Services</a> to inquire about the cancellation policy that applies to your reservation. External exchange guests should contact their external exchange company for the applicable cancellation policy.</p>
+
+                    <h3>Check Cashing Policy</h3>
+
+                    <p>Personal checks are not accepted at the resort, but we are able to cash travelers checks at the Front Desk.</p>
+
+                    <h3>Check-in/Check-out</h3>
+
+                    <p>We invite you to check in after 4&nbsp;p.m., and request that you check out before 10 a.m. local time. However, if your arrival or departure does not coincide with our schedule, the Front Desk will be happy to receive your bags while you enjoy the surrounding resort facilities.</p>
+
+                    <p>Consecutive reservations may require moving villas from stay to stay. Reservations will be placed in the villa type listed on your confirmation. Please make arrangements with the front desk for assistance with your luggage on the day that your new reservation begins.</p>
+
+                    <p>Owners, is someone else enjoying your villa or do you need to make other changes to your reservation? Be sure to contact <a href="https://www.vistana.com/contact-us" target="_blank">Owner Services</a> and provide your guest&rsquo;s name prior to their arrival to authorize their check-in or any other modification to your reservation. Rental by a VSN&nbsp;Owner of units reserved using StarOptions (other than a vacation period at your Home Resort) is prohibited. Violation may result in the suspension of an Owner&rsquo;s right to reserve within VSN&nbsp;until compliant. External exchange guests should contact their external exchange company to obtain a guest certificate if someone else will be checking in. Please also let us know if you&rsquo;re checking in after your scheduled arrival date, so we can plan properly.</p>
+
+                    <p>For security purposes, keys will only be given to the name on the reservation. You will be asked to provide a valid government or state-issued photo ID at check in.</p>
+
+                    <h3>Concierge Services</h3>
+
+                    <p>To ensure you have a memorable vacation with us, a designated personal Concierge is available to assist you. Your Concierge will ensure that all your needs are catered to before and during your vacation, including helping you arrange transportation and providing information you may need before you arrive. Please expect to hear from your Concierge soon. Or you can <a href="mailto:concierge@westinlagunamar.com" target="_blank">email</a> or call toll free at 1-844-260-9083 for more information.</p>
+
+                    <h3>Credit Card Deposit Policy</h3>
+
+                    <p>We require a credit card to secure any charges, which you may charge back to your folio.</p>
+
+                    <p>The system will hold these funds until check-out. Please note that credit card charges will appear in the local currency, Mexican pesos (MXN).</p>
+
+                    <h3>Cribs, Highchairs and Additional Bedding</h3>
+
+                    <p>Rollaway beds, cribs and other special request items are limited in supply and are fulfilled on a first-come, first-served basis. Charges apply for rollaway beds and some other special request items. Rollaway beds are limited to one per villa and are not available in the studio premium villa due to space limitations.</p>
+
+                    <p>For special requests, please contact Owner Services up to 24 hours in advance of your arrival. External exchange guests should contact the resort directly to place request these items. The resort will make every effort to fulfill your requests, but requests are subject to availability and therefore not guaranteed.</p>
+
+                    <h3>Currency Policy</h3>
+
+                    <p><strong>Currency Fluctuations</strong><br />
+                    For non-U.S. hotels, rates confirmed in USD may be converted to local currency by the hotel at your time of stay, based on the exchange rate used by the hotel and are subject to exchange rate fluctuations. Credit card charges are subject to additional currency conversions by banks or credit card companies, which are not within the hotel&rsquo;s control and may impact the amount charged to your credit card. Please contact the hotel if you have any questions.</p>
+
+                    <p><strong>Restrictions on the Acceptance of U.S. Currency</strong><br />
+                    Due to local regulations, the acceptance of U.S. dollars in cash is now restricted across Mexico. Payments with credit/debit cards remain unaffected. Please provide arrangements to settle your accounts and other expenses with a credit card or in Mexican pesos. We apologize in advance for any inconvenience this may cause our guests. Please check with the Concierge for the location of a bank where currency can be exchanged.</p>
+
+                    <p>Resort dining and shopping outlets are unable to accept payment in U.S. dollars. Purchases at these outlets may be paid with credit card or Mexican pesos, or charged to your folio.</p>
+
+                    <p>While exploring the local area, Members/Owners and guests are recommended to pay with credit card or Mexican pesos, as most local businesses will not accept payment in U.S. dollars.</p>
+
+                    <h3>Early Departure &ndash; Owners</h3>
+
+                    <p>Should you check out prior to your confirmed departure date, the unused portion of your reservation will be forfeited. StarOptions are not refunded for late arrival or early departure. External exchange guests should contact their external exchange company for information on early departure.</p>
+
+                    <h3>Grocery Services</h3>
+
+                    <p>To have your villa prestocked with groceries, beverages and other necessities, contact the resort <a href="mailto:concierge@westinlagunamar.com" target="_blank">Concierge</a> prior to your arrival.</p>
+
+                    <h3>Housekeeping Policy &ndash; Owners</h3>
+
+                    <p><strong>Seven nights or more:</strong> For your comfort, your villa will receive a mid-week refresher if you are staying for at least seven nights. If you are staying for more than a week, an additional housekeeping service will be scheduled during the check-in process. This will also apply to external exchange guests.</p>
+
+                    <p><strong>Less than seven nights:</strong> Midweek service is not provided for stays less than seven nights.</p>
+
+                    <p><strong>Additional Housekeeping Services:</strong> Additional housekeeping services, including daily service, are available. Please arrange directly with the resort prior to your arrival. Fees apply.</p>
+
+                    <p><strong>Housekeeping Fees:</strong> A charge will be automatically applied to your villa folio for the second or more reservations (based on transaction date not arrival date) within a single Use Year associated with a single Vacation Ownership Interest.</p>
+
+                    <h3>Internet Services</h3>
+
+                    <p>Complimentary Internet access is available in your villa and throughout the resort. The Business Center also offers Internet, computer, printing and faxing services (fees apply).</p>
+
+                    <h3>Parking</h3>
+
+                    <p>Complimentary self parking and valet parking are available at the resort.</p>
+
+                    <h3>Pet Policy</h3>
+
+                    <p>To ensure your comfort and safety, and to maintain the quality of your villa, our vacation ownership resorts do not allow pets on the resort grounds or in the villas, with the exception of service animals.</p>
+
+                    <h3>Smoking Policy</h3>
+
+                    <p>Smoking of any kind &mdash; including electronic cigarettes &mdash; is not permitted in your villa, including your balcony. Designated smoking areas are provided throughout the resort. Violation of this smoking policy may result in a nonrefundable US$200 fee charged to your folio.</p>
+
+                    <h3>Special Requests</h3>
+
+                    <p>The Westin Lagunamar Ocean Resort Villas &amp; Spa does not accept special requests for view, specific floor or specific villa number location. The resort will make every effort to fulfill your other requests, but requests are subject to availability and therefore not guaranteed. Special requests should be placed more than 24 hours in advance of your arrival.</p>
+
+                    <p>Unforeseen events or circumstances beyond our control may result in last-minute changes. As a result, villa assignment or special requests will only be confirmed during the check-in process.</p>
+
+                    <p>Changes to the arrival or departure date or to villa type (other than releasing one side of the lockoff for reservations confirmed during the Home Resort Reservation Period) will result in a loss of priority for fulfilling special requests.</p>
+
+                    <h3>Marriott Bonvoy benefits</h3>
+
+                    <p>Marriott Bonvoy&trade; Points may be earned for qualified charges at the resort. As a villa property, we are unable to offer select Marriott Bonvoy&trade; Member benefits for ownership reservations, including complimentary room upgrades, Suite Night Awards&trade;, priority late check-out, Your24&trade;, and Gold Elite and Platinum Elite welcome gifts.</p>
+
+                    <h3>Transportation and Shuttle Service</h3>
+
+                    <p>Our Concierge will contact you prior to arrival to help arrange your transportation needs, whether you prefer to catch the resort shuttle or rent a car. Once at the resort, there are many ways to get around the city, including public buses and hotel shuttles, which are an easy and convenient way to navigate Canc&uacute;n.</p>
+
+                    <p>Please note that the information contained on this page is subject to change without prior notice.</p>
+                  address2: 'Lote 18, Fraccion II, Zona Hotelera'
+                  address1: 'Boulevard Kukulcan KM 12.5,'
+                  facebook: 'https://www.facebook.com/TheWestinLagunamarOceanResort'
+                  pinterest: 'https://www.pinterest.com/vistana'
+                  nodename: the-westin-lagunamar-ocean-resort
+                  checkIn: 4 p.m.
+                  sublocale:
+                    nodename: cancun
+                    resourceId: 2d2ce210-8f23-4a46-9e9a-d4c65ea7593a
+                    featured: 'false'
+                    images:
+                      - nodename: locale-cancun
+                        resourceId: dddea023-a13a-4948-92c0-27b86a7c778f
+                        featured: 'false'
+                        name: Cancun
+                        photo:
+                          '16:9':
+                            nodename: 17-OOC-1265-Cancun-Destination-shutterstock_147294341-16x9.png
+                            path: 'https://content-qa.vistana.com/files/live/sites/vistana-digital-content-manager/files/images/locale/17-OOC-1265-Cancun-Destination-shutterstock_147294341-16x9.png'
+                            width: 1300
+                            ratio: '16:9'
+                            height: 731
+                          '6:3':
+                            nodename: 17-OOC-1265-Cancun-Destination-shutterstock_147294341-6x3.png
+                            path: 'https://content-qa.vistana.com/files/live/sites/vistana-digital-content-manager/files/images/locale/17-OOC-1265-Cancun-Destination-shutterstock_147294341-6x3.png'
+                            width: 1300
+                            ratio: '6:3'
+                            height: 650
+                        referenceID: main
+                    name: Cancún
+                    description: |
+                      <p>Canc&uacute;n is Mexico&rsquo;s most sought-after destination, and for good reason. It&rsquo;s the ideal spot to indulge in the best of Caribbean relaxation and immerse yourself in active cultural exploration &mdash; all in one place. Relax surfside by crystalline waters. Snorkel tropical reefs brimming with wildlife. Explore the area&rsquo;s cavernous underground rivers. Discover breathtaking Mayan ruins including Chichen Itza. It&rsquo;s all here.</p>
+                    ugcTags:
+                      - mexico
+                      - wlcrv
+                      - wlor
+                  phoneFax: 52-998-891-4201
+                  propertyID: '5646'
+                - tripadvisor: 'https://www.tripadvisor.com/Hotel_Review-g147410-d147568-Reviews-The_Westin_St_John_Resort-Cruz_Bay_St_John_U_S_Virgin_Islands.html'
+                  country: United States
+                  twitterTitle: The Westin St. John Resort Villas
+                  resourceId: 15321a2e-288f-47fb-bd30-1eb118912353
+                  documents:
+                    - nodename: wsj-property-map
+                      path: 'https://content-qa.vistana.com/files/live/sites/vistana-digital-content-manager/files/documents/map/16-OOC-0909__WSJ_Resort_Site_Map_8_31_17-Horizontal.pdf'
+                      resourceId: 19b2c03d-add2-4707-b353-a0558f4e0d70
+                      persona:
+                        - Anonymous
+                        - Guest
+                        - Owner
+                      name: 'The Westin St. John Resort Villas Property, Map'
+                      referenceID: map
+                  accessibility:
+                    accessibleGuestRoom: null
+                    accessiblePublicSpaces:
+                      - Public entrance alternative
+                      - Registration Desk Pathway
+                      - Restaurant(s)/Lounge(s)
+                      - Pool pathway
+                      - 'Spa '
+                      - 'Fitness Center '
+                      - 'Business Center '
+                      - Pool accessible
+                      - Registration desk
+                      - Accessible Self-parking
+                      - Accessible guest rooms with 32” wide doorways
+                      - 'Accessible route from public entrance to accessible guest rooms '
+                      - Concierge desk
+                      - Service animals are welcome
+                      - 'Transfer shower '
+                      - Roll-in shower
+                      - Doors with lever handles
+                      - 'Door night guards, lowered'
+                      - 'Electrical outlets, lowered'
+                      - Bathtub grab bars
+                      - 'Shower wand, adjustable'
+                      - 'Deadbolt locks, lowered'
+                      - 'Viewports, lowered'
+                      - 'Vanities, accessible'
+                      - Toilet seat at wheelchair height
+                      - Bathroom grab bars
+                      - Bathtub seat
+                      - 'TV with close-captioning '
+                      - Hearing accessible rooms and/or kits
+                      - Elevators
+                  instagram: 'https://www.instagram.com/westinstjohn/'
+                  type: Resort
+                  propertyIDSun: '17'
+                  openGraphTitle: The Westin St. John Resort Villas
+                  twitter: 'http://www.twitter.com/WestinStJohn'
+                  state: U.S. Virgin Islands
+                  brand:
+                    appleStoreLink: 'https://itunes.apple.com/us/app/westin-vacation-club/id1342706290?mt=8'
+                    nodename: westin
+                    resourceId: 0aec915b-631e-43a4-85bb-38ef6de2e9f0
+                    featured: 'false'
+                    images:
+                      - nodename: westin-logo
+                        resourceId: 55012988-51bb-4fab-9d4c-fd20fdc99bd3
+                        featured: 'false'
+                        name: Westin Logo
+                        photo:
+                          '4:3':
+                            nodename: 19-OOC-0447--wvc_logo-704x520.jpg
+                            path: 'https://content-qa.vistana.com/files/live/sites/vistana-digital-content-manager/files/images/brand-logos/19-OOC-0447--wvc_logo-704x520.jpg'
+                            width: 704
+                            ratio: '4:3'
+                            height: 520
+                        referenceID: logo
+                      - nodename: westin-app-icon
+                        resourceId: 85a5c4e9-9afa-40ac-a125-20e16a626f54
+                        featured: 'false'
+                        name: Westin App Icon
+                        photo:
+                          '1:1':
+                            nodename: 19-OOC-0447-wvc_app_icon-520x520.jpg
+                            path: 'https://content-qa.vistana.com/files/live/sites/vistana-digital-content-manager/files/images/app-icons/19-OOC-0447-wvc_app_icon-520x520.jpg'
+                            width: 520
+                            ratio: '1:1'
+                            height: 520
+                        referenceID: icon
+                    name: Westin
+                    placepassUrl: 'https://westinvacationclub.placepass.com'
+                    googlePlayStoreLink: 'https://play.google.com/store/apps/details?id=com.vistana.app.westin'
+                  slug: the-westin-st-john-resort-villas
+                  zip: 831
+                  images:
+                    - nodename: wsj-property-main
+                      resourceId: db34e8de-4965-4d9d-b684-2073717910da
+                      featured: 'false'
+                      name: The Westin St. John Resort Villas Property
+                      photo:
+                        '16:9':
+                          nodename: 17-OOC-1265-Hero-wes1187po.149800-1300-16x9.png
+                          path: 'https://content-qa.vistana.com/files/live/sites/vistana-digital-content-manager/files/images/properties/wsj/17-OOC-1265-Hero-wes1187po.149800-1300-16x9.png'
+                          width: 150
+                          ratio: '16:9'
+                          height: 84
+                        '3:2':
+                          nodename: 17-OOC-1265-Hero-wes1187po.149800-Hero-1300-3x2.png
+                          path: 'https://content-qa.vistana.com/files/live/sites/vistana-digital-content-manager/files/images/properties/wsj/17-OOC-1265-Hero-wes1187po.149800-Hero-1300-3x2.png'
+                          width: 1300
+                          ratio: '3:2'
+                          height: 867
+                        '4:3':
+                          nodename: 17-OOC-1265-Hero-wes1187po.149800-1300-4x3.png
+                          path: 'https://content-qa.vistana.com/files/live/sites/vistana-digital-content-manager/files/images/properties/wsj/17-OOC-1265-Hero-wes1187po.149800-1300-4x3.png'
+                          width: 1300
+                          ratio: '4:3'
+                          height: 975
+                        '6:3':
+                          nodename: 17-OOC-1265-Hero-wes1187po.149800-Hero-1300-6x3.png
+                          path: 'https://content-qa.vistana.com/files/live/sites/vistana-digital-content-manager/files/images/properties/wsj/17-OOC-1265-Hero-wes1187po.149800-Hero-1300-6x3.png'
+                          width: 1300
+                          ratio: '6:3'
+                          height: 650
+                      referenceID: main
+                    - nodename: wsj-property-logo
+                      resourceId: c44f172e-1030-4bc2-b63b-ea896f3bda6b
+                      featured: 'false'
+                      name: The Westin St. John Resort Villas Property
+                      referenceID: logo
+                    - nodename: wsj-property-map
+                      resourceId: e2edb8ba-56ad-47df-b6bf-5b7ac38cb3d5
+                      featured: 'false'
+                      name: Map
+                      photo:
+                        '5:4':
+                          nodename: 17-OOC-1265-Resort-Site-Map-16-OOC-0909__WSJ_Resort_Site_Map_8_31_17-Horizontal-5x4.png
+                          path: 'https://content-qa.vistana.com/files/live/sites/vistana-digital-content-manager/files/images/map/17-OOC-1265-Resort-Site-Map-16-OOC-0909__WSJ_Resort_Site_Map_8_31_17-Horizontal-5x4.png'
+                          width: 1300
+                          ratio: '5:4'
+                          height: 1040
+                      referenceID: map
+                    - nodename: wsj-property-qrcode
+                      resourceId: db34e8de-4965-4d9d-b684-2073717910da
+                      featured: 'false'
+                      name: The Westin St. John Resort Villas Property
+                      photo:
+                        '1:1':
+                          nodename: 19-OOC-0447-wsj-qr-520x520.jpg
+                          path: 'https://content-qa.vistana.com/files/live/sites/vistana-digital-content-manager/files/images/properties/wsj/19-OOC-0447-wsj-qr-520x520.jpg'
+                          width: 520
+                          ratio: '1:1'
+                          height: 520
+                      referenceID: qrcode
+                  persona:
+                    - Anonymous
+                    - Guest
+                    - Owner
+                  openGraphDescription: Have an unforgettable vacation at The Westin St. John Resort Villas.
+                  coordinateLatitude: '18.320738'
+                  twitterDescription: Have an unforgettable vacation at The Westin St. John Resort Villas.
+                  name: The Westin St. John Resort Villas
+                  checkOut: 10 a.m.
+                  hasPlacepass: 'true'
+                  announcements:
+                    specialConditions:
+                      - startPeriod: '2019-12-09'
+                        endPeriod: '2020-05-07'
+                        displayFrom: '2019-12-09'
+                        shortDescription: 'Earn up to 2,000 Marriott Bonvoy Points!'
+                        descriptiveText: 'Get special savings on your rental car and earn up to 2,000 Marriott Bonvoy points!'
+                      - startPeriod: '2020-01-03'
+                        endPeriod: '2020-07-03'
+                        displayFrom: '2020-01-03'
+                        shortDescription: Resort Fee Details
+                        descriptiveText: 'Please note a daily resort fee of $40 will be added to the room rate which includes beach/pool chairs, umbrellas, towels, non-motorized watersports (snorkel gear excluded), local phone calls, high speed internet access, on property transportation and self-parking.'
+                      - startPeriod: '2019-11-07'
+                        endPeriod: '2020-05-07'
+                        displayFrom: '2019-11-07'
+                        shortDescription: Book Activities and Earn Marriott Bonvoy Points
+                        descriptiveText: 'Explore over 250,000 activities, adventures and curated experiences at home or on vacation and earn Marriott Bonvoy points each time you book.'
+                      - startPeriod: '2020-01-03'
+                        endPeriod: '2020-07-03'
+                        displayFrom: '2020-01-03'
+                        shortDescription: 'Transportation, Ferry & Shuttle Service'
+                        descriptiveText: 'You may travel from Cyril E. King Airport on St. Thomas to our resort either via our private Westin Ferry or the public ferry. Click below to learn more about fees, departure times and other important information.'
+                      - startPeriod: '2020-03-15'
+                        endPeriod: '2021-03-15'
+                        displayFrom: '2020-03-15'
+                        shortDescription: null
+                        descriptiveText: 'COVID-19 Update Please review quarantine requirements and travel restrictions for your destination before & after booking for compliance'
+                      - startPeriod: '2019-01-14'
+                        endPeriod: null
+                        displayFrom: '2019-01-14'
+                        shortDescription: null
+                        descriptiveText: 'Daily resort fee of USD 40 plus tax will be added to room rate-includes beach/pool chairs, self-parking, Wi-Fi and more.'
+                  youtube: 'https://www.youtube.com/VacationOwnership'
+                  referenceStaff:
+                    - nodename: wsj-concierge-westin-concierge
+                      resourceId: 2f2d5d63-c375-4289-a15a-866dcc4972a9
+                      images:
+                        - nodename: wsj-concierge-westin-concierge-concierge-photo
+                          resourceId: cff56866-f75f-4948-acbb-86eacac2d1e8
+                          featured: 'false'
+                          name: 'The Westin St. John Resort Villas, Concierge, Westin Concierge'
+                          referenceID: concierge
+                      nameFirst: Westin Concierge
+                      phone: 340-714-6350
+                      name: Westin Concierge
+                      description: 'Our experienced, on-site Concierge Team will assist you throughout your stay.'
+                      referenceID: concierge
+                  code: WSJ
+                  announcementsOverride: |
+                    <h3>RESORT RECOVERY &mdash; UPDATED JUNE 2019:</h3>
+
+                    <p>We are delighted to welcome Owners and Guests back to the beautiful paradise on St. John after our extended closure to recover from hurricane damage suffered in 2017. Prior to your arrival, we want to make you aware of some changes to the resort. While we welcomed our first Guests in early January, recovery work will be ongoing through the end of July 2019. Until then, Guests can anticipate seeing containers, some heavy equipment and workers throughout the resort. Thank you for your patience while we put the final touches on the resort. All villa buildings are open and fully functional.</p>
+
+                    <h3>NOW OFFERING THREE CHECK-IN FACILITIES:</h3>
+
+                    <p>You may choose to check in at the Westin<sup>&reg;</sup> reception lounge at the airport on St. Thomas, and if you have registered for the Westin ferry, the staff will accept your bags and transport them directly to the resort. The resort check-in facilities are located on the first floor of the administrative building (formerly where the gift shop was located) and at the Marina Front Desk, located dockside. See the Check-In section for additional information.</p>
+
+                    <h3>NEW SUN TERRACE (anticipated completion in late July):</h3>
+
+                    <p>The former reception building area is being converted to an open-air sun terrace with Wi-Fi, equipped with umbrellas, outdoor furniture and tables and chairs for Guests to enjoy.</p>
+
+                    <h3>RESORT AMENITIES:</h3>
+
+                    <p>The tennis courts will not reopen until June 2019, with two of the tennis courts being converted to a multiuse court. The multiuse court and four pickleball courts reopened on May 31. The resort&rsquo;s Main Pool, outdoor whirlpool spa and pool deck are open. Both the upper and lower Iguana pools are open and available for Guests of the Virgin Grand phase to enjoy. All water sports amenities are available, with complimentary nonmotorized water sport activities. (Fees apply for snorkeling equipment). Spa services are available in our spa rooms, your villa, the beachside gazebo and the poolside cabanas. The WestinWORKOUT<sup>&reg;</sup> Fitness Studio is open with cardio equipment, weight equipment and TRX training equipment.</p>
+
+                    <h3>TRANSPORTATION:</h3>
+
+                    <p>Both car rental services and taxis are available on St. John and at the resort. If you plan to rent a car, we recommend that you do so on St. John as the car barges running between St. Thomas and St. John are fewer and smaller than prior to the storm. See the Transportation section for additional information.</p>
+
+                    <h3>FOOD AND BEVERAGE:</h3>
+
+                    <p>Snorkels now offers three meals daily, serving breakfast from 7&ndash;10&nbsp;a.m., lunch from 11&nbsp;a.m. to 4&nbsp;p.m. and dinner from 5&ndash;9&nbsp;p.m. It is the only operational restaurant on property. Mango Deli has reopened in its original location and offers breakfast sandwiches, lunch fare and sundries. <a href="https://owner.vistana.com/services/genstore_categories.jsp?propertyId=17&amp;shoppingTypeId=1" target="_blank">Villa prestock service</a> is now available from Mango Deli. There are many restaurants at nearby Cruz Bay, or if you prefer to prepare your meals in the privacy of your villa, the local markets are fully stocked.</p>
+
+                    <h3>ISLAND RECOVERY:</h3>
+
+                    <p>While the island is ready for guests, there are still some services that have not fully recovered, including health services. Currently, the on-island medical clinic is open at the site of the former hillside clinic. The clinic is temporarily hosted in containers and offers clean, modern equipment and services. The hospital on St. Thomas operates in a very limited capacity. To contact the on-island medical clinic, contact the resort Front Desk. If you are planning to visit the resort and have concerns about medical issues, we recommend that you subscribe to an air ambulance evacuation plan. Contact Owner Services for the names of independent vendors who offer air ambulance evacuation plans from the U.S. Virgin Islands (USVI).</p>
+
+                    <h3>DINING AND ACTIVITY PAYMENT:</h3>
+
+                    <p>Please note that all outlets for food and beverage purchases and resort activities operate cashless. See Currency and Check Cashing Policy for additional information.</p>
+
+                    <h3>ENVIRONMENTAL/INFRASTRUCTURE IMPACT FEE:</h3>
+
+                    <p>The USVI government assesses a US$25 per-night, per-villa Environmental/Infrastructure Impact Fee to vacation ownership Guests, as implemented in 2016. This fee is based on the villa being occupied and will be added to the Guest folio at check-out.</p>
+                  phoneOwnerServices: 1-888-986-9637
+                  city: St. John
+                  policies:
+                    smokeFree: true
+                    petsAllowed: false
+                    videoCheckOut: false
+                    checkOutTime: '10:00'
+                    internetPolicy: true
+                    checkInTime: '16:00'
+                    expressCheckOut: false
+                    videoBillReview: false
+                    infoPolicies:
+                      - name: General Policies
+                        typeName: General Policies
+                        description: '<ul><li>Check-In Time: 04:00 p.m.</li><li>Check-Out Time: 10:00 a.m.</li><li>Smoke Free: Yes</li><li>Pets Allowed: No</li><li>Internet: Yes</li><li>Express Check-In: No</li><li>Express Check-Out: No</li><li>Video Check-Out: No</li><li>Video Bill Review: No</li></ul>'
+                      - name: Parking
+                        typeName: Parking
+                        description: '<ul><li>On-site parking</li></ul>'
+                      - name: Internet Services
+                        typeName: Internet Services
+                        description: '<ul><li>High Speed: Check email + browse the Web</li></ul>'
+                      - name: Guest Services
+                        typeName: Guest Services
+                        description: '<ul><li>Mobility accessible rooms</li><li>Housekeeping service daily</li><li>Safe deposit boxes, front desk</li></ul>'
+                      - name: Kitchen Amenities
+                        typeName: Kitchen Amenities
+                        description: '<ul><li>Stove</li><li>Toaster oven</li><li>Water purification system</li><li>Table and chairs</li><li>Toaster</li><li>Dishwasher</li><li>Microwave oven</li><li>Conventional oven</li><li>Pots, pans, serving dishes</li><li>Refrigerator</li><li>Refrigerator with icemaker</li><li>Silverware</li></ul>'
+                      - name: General Room Amenities
+                        typeName: General Room Amenities
+                        description: '<ul><li>Pull-out sofa bed</li><li>Individual climate control</li><li>Washer/dryer</li><li>Bottled water</li><li>Coffee maker/tea service</li><li>Air conditioning</li><li>Alarm clock</li><li>Iron and ironing board</li><li>Safe</li></ul>'
+                    expressCheckIn: false
+                  description: |
+                    <p>Its lush surroundings, friendly atmosphere, incomparable water excursions, and charming shopping district make a stay at The Westin St. John Resort Villas <strong>the perfect Caribbean escape</strong>.</p>
+                  locale:
+                    nodename: caribbean
+                    resourceId: 7b63a336-77f7-4d23-a070-0fe40db6433a
+                    featured: 'false'
+                    images:
+                      - nodename: locale-caribbean
+                        resourceId: 381cd2a5-6f0a-4edb-b976-a703c98e467a
+                        featured: 'false'
+                        name: Caribbean
+                        photo:
+                          '16:9':
+                            nodename: 17-OOC-1265-USVI-Trunk-Bay-Destination-shutterstock_205960639-16x9.png
+                            path: 'https://content-qa.vistana.com/files/live/sites/vistana-digital-content-manager/files/images/locale/17-OOC-1265-USVI-Trunk-Bay-Destination-shutterstock_205960639-16x9.png'
+                            width: 1300
+                            ratio: '16:9'
+                            height: 731
+                          '6:3':
+                            nodename: 17-OOC-1265-USVI-Trunk-Bay-Destination-shutterstock_205960639-6x3.png
+                            path: 'https://content-qa.vistana.com/files/live/sites/vistana-digital-content-manager/files/images/locale/17-OOC-1265-USVI-Trunk-Bay-Destination-shutterstock_205960639-6x3.png'
+                            width: 1300
+                            ratio: '6:3'
+                            height: 650
+                        referenceID: main
+                    name: Caribbean
+                    description: |
+                      <p>Balmy breezes, white-sand beaches and shimmering ocean waters: The ideal recipe for a Caribbean vacation. Whether exploring the upbeat island culture of the Bahamas or the relaxing vibes of St. John, these Caribbean islands are relatively close, but feel worlds away from the everyday. Enjoy snorkeling, watersports and deep-sea fishing; take a scenic sunset cruise; or even swim with dolphins as you enjoy an elegant villa resort vacation.</p>
+                    ugcTags:
+                      - bahamas
+                      - caribbean
+                      - hra
+                      - usvirginislands
+                      - wsj
+                  marshaCode: SJFWI
+                  coordinateLongitude: '-64.781047'
+                  scope: vse
+                  marriottData:
+                    accessibility:
+                      accessibleGuestRoom: null
+                      accessiblePublicSpaces:
+                        - Public entrance alternative
+                        - Registration Desk Pathway
+                        - Restaurant(s)/Lounge(s)
+                        - Pool pathway
+                        - 'Spa '
+                        - 'Fitness Center '
+                        - 'Business Center '
+                        - Pool accessible
+                        - Registration desk
+                        - Accessible Self-parking
+                        - Accessible guest rooms with 32” wide doorways
+                        - 'Accessible route from public entrance to accessible guest rooms '
+                        - Concierge desk
+                        - Service animals are welcome
+                        - 'Transfer shower '
+                        - Roll-in shower
+                        - Doors with lever handles
+                        - 'Door night guards, lowered'
+                        - 'Electrical outlets, lowered'
+                        - Bathtub grab bars
+                        - 'Shower wand, adjustable'
+                        - 'Deadbolt locks, lowered'
+                        - 'Viewports, lowered'
+                        - 'Vanities, accessible'
+                        - Toilet seat at wheelchair height
+                        - Bathroom grab bars
+                        - Bathtub seat
+                        - 'TV with close-captioning '
+                        - Hearing accessible rooms and/or kits
+                        - Elevators
+                    policies:
+                      - name: General Policies
+                        infoList:
+                          - 'Check-In Time: 04:00 p.m.'
+                          - 'Check-Out Time: 10:00 a.m.'
+                          - 'Smoke Free: Yes'
+                          - 'Pets Allowed: No'
+                          - 'Internet: Yes'
+                          - 'Express Check-In: No'
+                          - 'Express Check-Out: No'
+                          - 'Video Check-Out: No'
+                          - 'Video Bill Review: No'
+                      - name: Parking
+                        infoList:
+                          - On-site parking
+                      - name: Internet Services
+                        infoList:
+                          - 'High Speed: Check email + browse the Web'
+                      - name: Guest Services
+                        infoList:
+                          - Mobility accessible rooms
+                          - Housekeeping service daily
+                          - 'Safe deposit boxes, front desk'
+                      - name: Kitchen Amenities
+                        infoList:
+                          - Stove
+                          - Toaster oven
+                          - Water purification system
+                          - Table and chairs
+                          - Toaster
+                          - Dishwasher
+                          - Microwave oven
+                          - Conventional oven
+                          - 'Pots, pans, serving dishes'
+                          - Refrigerator
+                          - Refrigerator with icemaker
+                          - Silverware
+                      - name: General Room Amenities
+                        infoList:
+                          - Pull-out sofa bed
+                          - Individual climate control
+                          - Washer/dryer
+                          - Bottled water
+                          - Coffee maker/tea service
+                          - Air conditioning
+                          - Alarm clock
+                          - Iron and ironing board
+                          - Safe
+                    announcements:
+                      - text: 'Get special savings on your rental car and earn up to 2,000 Marriott Bonvoy points!'
+                        title: 'Earn up to 2,000 Marriott Bonvoy Points!'
+                        effectiveDate: '2019-12-09'
+                        expirationDate: '2020-05-07'
+                      - text: 'Please note a daily resort fee of $40 will be added to the room rate which includes beach/pool chairs, umbrellas, towels, non-motorized watersports (snorkel gear excluded), local phone calls, high speed internet access, on property transportation and self-parking.'
+                        title: Resort Fee Details
+                        effectiveDate: '2020-01-03'
+                        expirationDate: '2020-07-03'
+                      - text: 'Explore over 250,000 activities, adventures and curated experiences at home or on vacation and earn Marriott Bonvoy points each time you book.'
+                        title: Book Activities and Earn Marriott Bonvoy Points
+                        effectiveDate: '2019-11-07'
+                        expirationDate: '2020-05-07'
+                      - text: 'You may travel from Cyril E. King Airport on St. Thomas to our resort either via our private Westin Ferry or the public ferry. Click below to learn more about fees, departure times and other important information.'
+                        title: 'Transportation, Ferry & Shuttle Service'
+                        effectiveDate: '2020-01-03'
+                        expirationDate: '2020-07-03'
+                      - text: 'COVID-19 Update Please review quarantine requirements and travel restrictions for your destination before & after booking for compliance'
+                        title: null
+                        effectiveDate: '2020-03-15'
+                        expirationDate: '2021-03-15'
+                      - text: 'Daily resort fee of USD 40 plus tax will be added to room rate-includes beach/pool chairs, self-parking, Wi-Fi and more.'
+                        title: null
+                        effectiveDate: '2019-01-14'
+                        expirationDate: null
+                  ugcTags:
+                    - caribbean
+                    - wsj
+                  phoneMain: 340-693-8000
+                  universalPropertyCode: WSJSJFWI
+                  termsConditions: |
+                    <h3>SPECIAL CONDITIONS</h3>
+
+                    <p><strong>Resort Recovery &mdash; Updated June 2019</strong><br />
+                    We are delighted to welcome Owners and Guests back to the beautiful paradise on St. John after our extended closure to recover from hurricane damage suffered in 2017. Prior to your arrival, we want to make you aware of some changes to the resort. While we welcomed our first Guests in early January, recovery work will be ongoing through the end of July 2019. Until then, Guests can anticipate seeing containers, some heavy equipment and workers throughout the resort. Thank you for your patience while we put the final touches on the resort. All villa buildings are open and fully functional.</p>
+
+                    <p><strong>Now offering three check-in facilities:</strong><br />
+                    You may choose to check in at the Westin<sup>&reg;</sup> reception lounge at the airport on St. Thomas, and if you have registered for the Westin ferry, the staff will accept your bags and transport them directly to the resort. The resort check-in facilities are located on the first floor of the administrative building (formerly where the gift shop was located) and at the Marina Front Desk, located dockside. See the Check-In section for additional information.</p>
+
+                    <p><strong>New Sun Terrace (anticipated completion in late July):</strong><br />
+                    The former reception building area is being converted to an open-air sun terrace with Wi-Fi, equipped with umbrellas, outdoor furniture and tables and chairs for Guests to enjoy.</p>
+
+                    <p><strong>Resort Amenities:</strong><br />
+                    The tennis courts will not reopen until June 2019, with two of the tennis courts being converted to a multiuse court. The multiuse court and four pickleball courts reopened on May 31. The resort&rsquo;s Main Pool, outdoor whirlpool spa and pool deck are open. Both the upper and lower Iguana pools are open and available for Guests of the Virgin Grand phase to enjoy. All water sports amenities are available, with complimentary nonmotorized water sport activities. (Fees apply for snorkeling equipment). Spa services are available in our spa rooms, your villa, the beachside gazebo and the poolside cabanas. The WestinWORKOUT<sup>&reg;</sup> Fitness Studio is open with cardio equipment, weight equipment and TRX training equipment.</p>
+
+                    <p><strong>Transportation:</strong><br />
+                    Both car rental services and taxis are available on St. John and at the resort. If you plan to rent a car, we recommend that you do so on St. John as the car barges running between St. Thomas and St. John are fewer and smaller than prior to the storm. See the Transportation section for additional information.</p>
+
+                    <p><strong>Food and Beverage:</strong><br />
+                    Snorkels now offers three meals daily, serving breakfast from 7&ndash;10&nbsp;a.m., lunch from 11&nbsp;a.m. to 4&nbsp;p.m. and dinner from 5&ndash;9&nbsp;p.m. It is the only operational restaurant on property. Mango Deli has reopened in its original location and offers breakfast sandwiches, lunch fare and sundries. <a href="https://owner.vistana.com/services/genstore_categories.jsp?propertyId=17&amp;shoppingTypeId=1" target="_blank">Villa prestock service</a> is now available from Mango Deli. There are many restaurants at nearby Cruz Bay, or if you prefer to prepare your meals in the privacy of your villa, the local markets are fully stocked.</p>
+
+                    <p><strong>Island Recovery:</strong><br />
+                    While the island is ready for guests, there are still some services that have not fully recovered, including health services. Currently, the on-island medical clinic is open at the site of the former hillside clinic. The clinic is temporarily hosted in containers and offers clean, modern equipment and services. The hospital on St. Thomas operates in a very limited capacity. To contact the on-island medical clinic, contact the resort Front Desk. If you are planning to visit the resort and have concerns about medical issues, we recommend that you subscribe to an air ambulance evacuation plan. Contact Owner Services for the names of independent vendors who offer air ambulance evacuation plans from the U.S. Virgin Islands (USVI).</p>
+
+                    <p><strong>Dining and Activity Payment:</strong><br />
+                    Please note that all outlets for food and beverage purchases and resort activities operate cashless. See Currency and Check Cashing Policy for additional information.</p>
+
+                    <p><strong>Environmental/Infrastructure Impact Fee:</strong><br />
+                    The USVI government assesses a US$25 per-night, per-villa Environmental/Infrastructure Impact Fee to vacation ownership Guests, as implemented in 2016. This fee is based on the villa being occupied and will be added to the Guest folio at check-out.</p>
+
+                    <h3>ACCESSIBILITY</h3>
+
+                    <p>We are committed to making our facilities, amenities and services accessible to guests with disabilities. Accessibility features in your villa are guaranteed only if confirmed during the reservation process and indicated on your confirmation.</p>
+
+                    <h3>AGE REQUIREMENT POLICY</h3>
+
+                    <p>Guests must be 18 years or older with photo identification to check in.</p>
+
+                    <h3>ALCOHOL POLICY</h3>
+
+                    <p>Alcoholic beverage service is restricted to those 18 years or older with valid photo identification.</p>
+
+                    <h3>CANCELLATION POLICY &ndash; OWNERSHIP RESERVATONS</h3>
+
+                    <p>Vistana Signature Network<sup>&trade;</sup> reservations made during the Home Resort Reservation Period or the VSN Float Period are subject to the following cancellation policy and may be cancelled by calling Owner Services prior to the arrival date of the assigned reservation. Failure to cancel a confirmed reservation prior to the arrival date will prevent the restoration of StarOptions for further use.</p>
+
+                    <p>Reservations may be cancelled 61 days or greater prior to arrival with no cancellation fee or Usage Restriction.</p>
+
+                    <p>Reservations made 60 days or less prior to arrival may be cancelled through the following day after making the reservation (before the end of hours of operation, Eastern Time) with no cancellation fee or Usage Restriction. After this grace period passes, cancellations and modifications to the reservation &ndash; including changes to the arrival or departure date or to Villa type (other than releasing one side of the lockoff for reservations confirmed during the Home Resort Reservation Period) &mdash; will incur cancellation fees. Subsequent usage will be restricted to reservations within 60 days of the new requested arrival date for that Use Year and will not be eligible for StarOptions Banking or points conversion.</p>
+
+                    <p><strong>Cancellation fees:</strong></p>
+
+                    <ul>
+                     <li><strong>60 days &ndash; 8 days:</strong> US$50 cancellation fee</li>
+                     <li><strong>7 days or less:</strong> US$75 cancellation fee</li>
+                    </ul>
+
+                    <p>Reservations not affiliated with the Vistana Signature Network may be subject to cancellation fees or use restrictions. Please contact <a href="/contact-us" target="_blank">Owner Services</a> to inquire about the cancellation policy that applies to your reservation. External exchange guests should contact their external exchange company for the applicable cancellation policy.</p>
+
+                    <h3>CURRENCY AND CHECK CASHING POLICY</h3>
+
+                    <p>While your final folio can be settled at the front desk using cash, travelers check, or credit card, please note that the resort&rsquo;s activities and food and beverage outlets operate on a cashless basis. All purchases and payment for services may be paid using a credit card or charged directly to your villa folio.</p>
+
+                    <p>We regret that personal checks are not accepted. However, traveler&rsquo;s checks can be cashed at the Front Desk.</p>
+
+                    <h3>CHECK-IN/CHECK-OUT</h3>
+
+                    <p>After your flight lands and your luggage is collected at baggage claim, proceed to the Westin airport reception desk to drop off your luggage and complete your check-in process. We invite you to check-in after 4 p.m., and request that you check-out before 10 a.m. local time. However, if your arrival or departure does not coincide with our schedule, the Front Desk will be happy to hold your bags while you enjoy the surrounding resort facilities.</p>
+
+                    <p>Please note that if your stay is comprised of multiple reservations with different Villa types or phases, you will need to change villas for each reservation. We recommend that you coordinate with the bellman to collect your luggage when you vacate the villa at 10 a.m. Luggage will then be stored and delivered to your new villa when it is ready at 4&nbsp;p.m.</p>
+
+                    <p>The <a href="https://owner.vistana.com/services/diamond.jsp?propertyId=17" target="_blank">Diamond Lane</a> makes check-in a breeze. To provide a smooth, quick and easy check-in experience for you, we invite you to fill out our <a href="https://owner.vistana.com/services/diamond.jsp?propertyId=17" target="_blank">Diamond Lane check-in form</a>. Submit it at least seven days prior to your scheduled and confirmed arrival date, and we will be better prepared to welcome you. Guests who have provided arrival information through the Diamond Lane are welcome to use the Westin airport reception desk to check-in.</p>
+
+                    <p>Owners, is someone else enjoying your villa? Be sure to contact <a href="https://www.vistana.com/contact-us" target="_blank">Owner Services</a> and provide your guest&rsquo;s name prior to their arrival to authorize their check-in. Rental by a VSN Owner of units reserved using StarOptions (other than a vacation period at your Home Resort) is prohibited. Violation may result in the suspension of an Owner&rsquo;s right to reserve within VSN until compliant. External exchange guests should contact their external exchange company to obtain a guest certificate if someone else will be checking in. Please also let us know if you&rsquo;re checking in after your scheduled arrival date, so we can plan properly.</p>
+
+                    <p>For security purposes, keys will only be given to the name on the reservation. You will be asked to provide a valid government or state-issued photo ID at check-in.</p>
+
+                    <h3>CONCIERGE SERVICES</h3>
+
+                    <p>The Concierge will contact you approximately two weeks prior to your stay to offer assistance with planning your vacation activities. Should you need to assistance, please email the <a href="mailto:concierge@westinstjohnvillas.com" target="_blank">Concierge</a>. Please be sure to include the guest name, reservation number and arrival date.</p>
+
+                    <h3>CREDIT CARD DEPOSIT POLICY</h3>
+
+                    <p>Credit card will be authorized for incidentals upon check in. The authorization will hold the funds until check out, at which time the amount actually incurred during the stay will be charged. Authorized amounts may take up to 30 days after departure to be released by your bank or financial institution and the hotel will not be responsible for any resulting fees or charges.</p>
+
+                    <h3>EARLY DEPARTURE &ndash; OWNERS</h3>
+
+                    <p>Should you check-out prior to your confirmed departure date, the unused portion of your reservation will be forfeited. Home Options and StarOptions are not refunded for late arrival or early departure.</p>
+
+                    <h3>HOUSEKEEPING POLICY &ndash; OWNERS</h3>
+
+                    <p><strong>Seven nights or more: </strong>For your comfort, your villa will receive a restorative mid-week refresher if you are staying for at least seven nights. If you are staying for more than a week, an additional housekeeping service will be scheduled during the check-in process. This will also apply to external exchange guests.</p>
+
+                    <p><strong>Less than seven nights:</strong> Midweek service is not provided for stays less than seven nights.</p>
+
+                    <p><strong>Additional Housekeeping Services:</strong> Additional housekeeping services, including daily service, are available. Please arrange directly with the resort prior to your arrival. Fees apply.</p>
+
+                    <p><strong>Housekeeping Fees:</strong> A charge will be automatically applied to your villa folio for the second or more reservations (based on transaction date not arrival date) within a single Use Year associated with a single Vacation Ownership Interest..</p>
+
+                    <h3>INTERNET SERVICES</h3>
+
+                    <p>Complimentary Internet access is available in your villa and throughout the resort. The resort recently upgraded its basic complimentary Internet access to be quicker and support up to 10 devices per villa. The Business Center also offers Internet, computers, printing and faxing services (fees apply).</p>
+
+                    <h3>PACKAGE HANDLING</h3>
+
+                    <p>The resort is happy to accept and store packages or luggage that you wish to send prior to your arrival (handling fees apply). Upon check-in, please advise the Concierge that you are awaiting a package. They will locate your package and deliver it to your villa.</p>
+
+                    <p><strong>US Postal Service</strong><br />
+                    When sending mail via USPS, please note that if the P.O. Box is not included in the address, the St. John post office will return your package to the sender.</p>
+
+                    <p>The Westin St. John Resort Villas<br />
+                    (Guest Name)<br />
+                    P.O. Box 8310 Great Cruz Bay,<br />
+                    St. John, USVI 00831</p>
+
+                    <p><strong>All other carriers</strong><br />
+                    (FedEx, UPS, DHL, etc.) For overnight or other delivery services, the resort&rsquo;s physical address must be used:</p>
+
+                    <p>The Westin St. John Resort Villas<br />
+                    (Guest Name)<br />
+                    300A Chocolate Hole<br />
+                    St. John, USVI 00830</p>
+
+                    <h3>PARKING</h3>
+
+                    <p>There is limited complimentary self-parking available at the resort. As an alternative way to get around the island, taxis are a plentiful and affordable mode of transportation.</p>
+
+                    <h3>PET POLICY</h3>
+
+                    <p>In order to ensure your stay is as pleasant as possible and to keep your villa clean and comfortable, our policy is that pets are not permitted in the villas. Allow us to assist you in finding one of the many kennels and pet boarding facilities in the area to best serve your needs. Please make arrangements prior to your arrival by calling the resort directly. Exceptions are made for service animals that fall within the guidelines of the Americans with Disabilities Act.</p>
+
+                    <h3>SMOKING POLICY</h3>
+
+                    <p>The Westin St. John Resort Villas prohibits smoking (including electronic cigarettes) inside the villas, the villa balconies and around all pool areas and public spaces, including the resort&#39;s private beach. If signs of smoking are detected, a US$200 fee will be applied to your folio.</p>
+
+                    <p>Additionally, in compliance with the U.S. Virgin Islands Smoke-free Act, smoking is prohibited in enclosed areas of public places, including restaurants and bars, enclosed areas of places of employment, in or within 20 feet of any outdoor service or waiting line, and within 20 feet of any public transportation station or platform open to the public. Smoking is only permitted in designated smoking areas, which are available throughout the resort.</p>
+
+                    <h3>SPECIAL REQUESTS</h3>
+
+                    <p>We are happy to accept any special request and will fulfill any that we can; however, requested items and villa assignment requests are not guaranteed.</p>
+
+                    <p><strong>In-Villa Items </strong><br />
+                    If you find that you forgot something or if you are traveling with little ones, just let us know. While we do have cribs and high chairs available, these are limited in supply and not guaranteed. Charges may also apply for some items. To make arrangements, Owners and external exchange Guests should contact the resort directly. The Westin St. John Resort &amp; Villas does not offer rollaway beds. Most villas are equipped with a sleeper sofa.</p>
+
+                    <p><strong>Villa Assignment </strong><br />
+                    Owners may place any special request related to villa assignment, but there is no guarantee that requests can be met. Special requests requiring additional Home Options or StarOptions cannot be fulfilled by the resort. Please contact Owner Services for assistance. Villa assignment and special request fulfilment will not be confirmed until the check-in process. Home Resort reservations will be placed in the phase owned. VSN reservations may be placed in any phase offering the villa type and occupancy reserved.</p>
+
+                    <p>Special requests should be placed more than 24 hours in advance of your arrival. Changes to the arrival or departure date, or to Villa type (other than releasing one side of the lock-off for reservations made on weekly VOI ownership and confirmed during the Home Resort Reservation Period), will result in a loss of priority for fulfilling special requests.</p>
+
+                    <p>Please note, reservations confirmed during the Home Resort Reservation Period do not guarantee specific floor, building, or villa number assignment. Additionally, reservations made using StarOptions do not guarantee phase, view, floor, building, or villa number assignment, even for Home Resort Owners.</p>
+
+                    <h3>Marriott Bonvoy benefits</h3>
+
+                    <p>Marriott Bonvoy&trade; Points may be earned for qualified charges at the resort. As a villa property, we are unable to offer select Marriott Bonvoy&trade; Member benefits for ownership reservations, including complimentary room upgrades, Suite Night Awards&trade;, priority late check-out, Your24&trade;, and Gold Elite and Platinum Elite welcome gifts.</p>
+
+                    <h3>TRANSPORTATION, FERRY AND SHUTTLE SERVICE</h3>
+
+                    <p>Guests flying into the Cyril E. King Airport on St. Thomas, may choose to travel to St. John via public ferry services or the private Westin ferry.</p>
+
+                    <p><strong>Westin Ferry</strong><br />
+                    If you choose the private Westin ferry service, you will check-in at the Westin reception desk at the airport and leave your luggage with the airport staff for direct transport to your villa. You will enjoy the 45-minute ride across the island of St. Thomas to the Red Hook ferry dock in an enclosed, air-conditioned van that is equipped with Wi-Fi. Upon arrival at the Red Hook dock, you will be met by Westin staff who will escort you to the private Westin ferry for a 15-minute ride directly to the resort dock, where you will be welcomed by the resort staff and offered transportation directly to your villa.</p>
+
+                    <p>Please provide your flight information at least seven days prior your visit using the <a href="https://owner.vistana.com/services/diamond.jsp?propertyId=17" target="_blank">Diamond Lane form</a>, to ensure that the airport staff is ready for your arrival. Please note that Westin ferry passes must be purchased at the Westin Airport office.</p>
+
+                    <p>The Westin ferry service includes round-trip service from the airport and the resort (including all transportation and luggage fees), unlimited travel between St. John and St. Thomas for the duration of your stay, and daily shopping trips to downtown St. Thomas (including taxi service to and from the ferry dock).</p>
+
+                    <p><strong>2019 Pricing for the Westin Ferry</strong></p>
+
+                    <ul>
+                     <li>Adult: US$120 round trip</li>
+                     <li>Youth (ages 4-17): US$90 round trip</li>
+                     <li>Children (3 and under): complimentary</li>
+                    </ul>
+
+                    <p><em>Prices subject to change without notice. Note that the Owner discount is available for two adults per Owner reservation.</em></p>
+
+                    <p>The private taxi and ferry operate on set schedules. While waiting, you are invited to relax in the Westin Airport Lounge.</p>
+
+                    <p><strong>Westin Ferry Schedule</strong></p>
+
+                    <p><strong>FERRY DEPARTURE TIMES</strong></p>
+
+                    <table border="0" cellpadding="2" cellspacing="0" width="100%">
+                     <tbody>
+                      <tr>
+                       <td width="48%"><strong>DEPART WESTIN DOCK</strong></td>
+                       <td width="52%"><strong>DEPART RED HOOK</strong></td>
+                      </tr>
+                      <tr>
+                       <td>5:15 a.m.</td>
+                       <td>6:00 a.m.</td>
+                      </tr>
+                      <tr>
+                       <td>7:00 a.m.</td>
+                       <td>7:30 a.m.</td>
+                      </tr>
+                      <tr>
+                       <td>8:15 a.m.</td>
+                       <td>9:15 a.m.</td>
+                      </tr>
+                      <tr>
+                       <td>10:15 a.m. SHOPPING</td>
+                       <td>11:15 a.m.</td>
+                      </tr>
+                      <tr>
+                       <td>12:15 p.m. SHOPPING</td>
+                       <td>2:30 p.m.</td>
+                      </tr>
+                      <tr>
+                       <td>3:15 p.m.</td>
+                       <td>4:30 p.m. SHOPPING</td>
+                      </tr>
+                      <tr>
+                       <td>5:00 p.m.</td>
+                       <td>6:00 p.m.</td>
+                      </tr>
+                      <tr>
+                       <td>6:30 p.m.</td>
+                       <td>9:30 p.m.</td>
+                      </tr>
+                      <tr>
+                       <td>11:40 p.m.</td>
+                       <td>Open for last flight</td>
+                      </tr>
+                     </tbody>
+                    </table>
+
+                    <p><strong>Public Ferry</strong><br />
+                    Owners and Guests may also choose to utilize the public transportation system in the U.S.V.I. Per person and luggage fees apply for taxi and ferry services. For information on public ferry service between St. Thomas and St. John, including pricing and schedules, visit <a href="http://www.vinow.com/general_usvi/interisland_ferry/" target="_blank">U.S.V.I. public ferry transportation</a>.</p>
+
+                    <p>If you plan to rent a car during your stay, we recommend that you do so on St John. There are car barges that run between St. Thomas and St. John but wait time to load may be more than two hours during peak travel periods.</p>
+
+                    <h3>TRAVEL DOCUMENT REQUIREMENTS</h3>
+
+                    <p>A passport is required for all non-US citizens. A passport is recommended for US citizens and will be required to visit the British Virgin Islands on any water sports excursions. However, it is not required for US citizens when traveling to the US Virgin Islands. US citizens traveling to the US Virgin Islands without a passport will be required to present a valid government issued ID and a birth certificate.</p>
+
+                    <p>You can verify acceptable forms of travel documentation with your airline or government.</p>
+
+                    <p>Please note that the information contained on this page is subject to change without prior notice.&nbsp;</p>
+                  address1: 300A Chocolate Hole
+                  facebook: 'http://www.facebook.com/WestinStJohn'
+                  pinterest: 'https://www.pinterest.com/vistana'
+                  nodename: the-westin-st-john-resort-villas
+                  checkIn: 4 p.m.
+                  sublocale:
+                    nodename: us-virgin-islands
+                    resourceId: 302d6c90-7778-4a91-ad5e-e326e2ac8a0a
+                    featured: 'false'
+                    images:
+                      - nodename: locale-us-virgin-islands
+                        resourceId: b425ef49-093a-4545-8c2f-69e153939d34
+                        featured: 'false'
+                        name: U.S. Virgin Islands
+                        photo:
+                          '16:9':
+                            nodename: 17-OOC-1265-USVI-Trunk-Bay-Destination-shutterstock_205960639-16x9.png
+                            path: 'https://content-qa.vistana.com/files/live/sites/vistana-digital-content-manager/files/images/locale/17-OOC-1265-USVI-Trunk-Bay-Destination-shutterstock_205960639-16x9.png'
+                            width: 1300
+                            ratio: '16:9'
+                            height: 731
+                          '6:3':
+                            nodename: 17-OOC-1265-USVI-Trunk-Bay-Destination-shutterstock_205960639-6x3.png
+                            path: 'https://content-qa.vistana.com/files/live/sites/vistana-digital-content-manager/files/images/locale/17-OOC-1265-USVI-Trunk-Bay-Destination-shutterstock_205960639-6x3.png'
+                            width: 1300
+                            ratio: '6:3'
+                            height: 650
+                        referenceID: main
+                    name: U.S. Virgin Islands
+                    description: |
+                      <p>Perfectly situated in the sunny Caribbean, the U.S. Virgin Islands are the definition of tropical paradise. Framed by beautiful, peaceful beaches and lush parklands, St. John, St. Thomas, and the many surrounding islands are perfect for nature lovers to explore &mdash; or just relax in. Here you&rsquo;ll find world-class snorkeling, watersports, picturesque sailing and exciting fishing excursions, and so much more.</p>
+                    ugcTags:
+                      - usvirginislands
+                      - wsj
+                  phoneFax: 340-779-4500
+                  propertyID: '1187'
+              success: true
         '204':
           description: No Content
           headers:
