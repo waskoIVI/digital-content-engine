@@ -361,7 +361,7 @@ paths:
               type: string
               default: 'public, max-age=86400'
           examples:
-            'Sample "All Properties" Response (2 Props)':
+            'Sample "All Properties" Response (2 Properties)':
               metas:
                 count: 2
                 limit: '2'
